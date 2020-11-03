@@ -1,0 +1,112 @@
+@media (max-width: 991px)
+  .container
+    max-width: 653px
+    width: 92%
+  .navbar
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    height: 70px
+    background-color: #ffffff
+    z-index: 999
+    &__logo
+      width: 143px
+      height: 33px
+    &__links-wrapper
+      display: none
+      &-mobile
+        position: fixed
+        top: 70px
+        left: 0
+        right: 0
+        bottom: -50px
+        margin: 0
+        padding-top: 50px
+        padding-bottom: 70px
+        display: none
+        flex-direction: column
+        background-color: #ffffff
+        overflow-y: scroll
+        z-index: 999
+        &_visible
+          display: flex
+    &__ul
+      margin: 0
+      flex-direction: column
+      align-items: center
+    &__item
+      margin-bottom: 30px
+    &__social
+      margin: 0
+    &__contacts
+      margin-right: 100px
+      &-email
+        display: none
+        &_mobile
+          display: inline-block
+          margin-top: 30px
+      &-phone
+        margin: 0
+  .main-display
+    padding-bottom: 0
+    padding-top: 40px
+    margin-top: 70px
+    height: 929px
+    &::after
+      bottom: 0
+    // &::before
+    //   right: 50%
+    //   background-size: 1388px 866px
+    //   background-position: 0 0
+    &__bg
+      top: 0
+      width: 100%
+      height: 100%
+    &__photo
+      right: 0
+      width: 653px
+      height: 366px
+      top: 420px
+    &__content
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+    &__title
+      font-size: 60px
+    &__description
+      font-size: 21px
+  .catalog
+    &__card
+      flex-basis: 100%
+      &:nth-last-child(2)
+        margin-bottom: 20px
+      &-left
+        margin-right: 0
+      &-right
+        width: 300px
+      &-img
+        width: 195px
+        height: 115px
+        &_large
+          width: 160px
+          height: 160px
+      
+
+  .mobile
+    &-button
+      padding: 0
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 34px
+      height: 18px
+      background-color: transparent
+      border: none
+      outline: none
+      cursor: pointer
+      &__line
+        width: 34px
+        height: 3px
+        background-color: #282A4C

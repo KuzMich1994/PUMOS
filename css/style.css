@@ -1,0 +1,1127 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: 'ALSRubl';
+  src: url("../fonts/ALSRubl.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'rouble';
+  src: url("../fonts/rouble.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: #CEFCFF;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1131px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+.button-primary {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  border-radius: 10px;
+  background-color: #FF8A00;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-secondary {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0E193E;
+  letter-spacing: 0.03em;
+  background-color: transparent;
+  border: 2px solid #005686;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.rouble {
+  margin-left: -4px;
+  font-family: 'ALSRubl', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #0E193E;
+}
+
+.mobile-button {
+  display: none;
+}
+
+.scroll-hidden {
+  overflow: hidden;
+}
+
+.navbar {
+  position: relative;
+  padding-top: 45px;
+  z-index: 99;
+}
+
+.navbar__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  width: 184px;
+  height: 43px;
+  object-fit: cover;
+}
+
+.navbar__links-wrapper {
+  display: flex;
+  margin-right: auto;
+  margin-left: 58px;
+}
+
+.navbar__ul {
+  margin-right: 77px;
+  padding: 0;
+  margin-top: 10px;
+  min-width: 345px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navbar__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #282A4D;
+}
+
+.navbar__link {
+  text-decoration: none;
+}
+
+.navbar__social {
+  margin-left: 10px;
+  width: 147px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__social-link {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+}
+
+.navbar__contacts-phone {
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.navbar__contacts-email {
+  text-decoration: none;
+}
+
+.navbar__contacts-email_mobile {
+  display: none;
+}
+
+.main-display {
+  position: relative;
+  padding-top: 123px;
+  padding-bottom: 100p1;
+}
+
+.main-display::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+  content: '';
+  width: 100%;
+  height: 121px;
+  background: linear-gradient(195.03deg, rgba(206, 252, 255, 0.18) 10.58%, #CEFCFF 100%);
+  z-index: -1;
+}
+
+.main-display__photo {
+  position: absolute;
+  top: 120px;
+  right: -38px;
+  bottom: 0;
+  width: 659px;
+  height: 366px;
+  object-fit: cover;
+}
+
+.main-display__bg {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 748px;
+  mix-blend-mode: luminosity;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.main-display__content {
+  position: relative;
+  margin-bottom: 272px;
+  z-index: 99;
+}
+
+.main-display__title {
+  margin: 0;
+  margin-bottom: 16px;
+  max-width: 570px;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60.5906px;
+  line-height: 106.69%;
+  color: #282A4D;
+}
+
+.main-display__description {
+  max-width: 577px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 27px;
+}
+
+.main-display__form {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-display__form-name {
+  padding: 5px 5px;
+  width: 150px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #0E193E;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444457;
+}
+
+.main-display__form-phone {
+  padding: 5px 5px;
+  width: 178px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #0E193E;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444457;
+}
+
+.main-display__form-button {
+  padding: 10px 18px;
+  border: none;
+}
+
+.catalog {
+  padding-bottom: 87px;
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 27px;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 106.69%;
+  color: #282A4D;
+}
+
+.catalog__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.catalog__card {
+  padding: 36px 17px 31px 20px;
+  margin-bottom: 20px;
+  width: 550px;
+  flex-basis: 49%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(66, 83, 84, 0.1);
+  border-radius: 16px;
+}
+
+.catalog__card:nth-last-child(1), .catalog__card:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
+.catalog__card-left {
+  margin-right: 24px;
+}
+
+.catalog__card-img {
+  width: 179px;
+  height: 105px;
+}
+
+.catalog__card-img_large {
+  width: 130px;
+  height: 130px;
+}
+
+.catalog__card-pricetag {
+  margin-right: 51px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #0E193E;
+}
+
+.catalog__card-right {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+}
+
+.catalog__card-title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #0E193E;
+}
+
+.catalog__card-ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.catalog__card-item {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__card-item:last-child {
+  margin-bottom: 16px;
+}
+
+.catalog__card-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.catalog__card-text_bold {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 130.9%;
+}
+
+.catalog__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.catalog__button {
+  padding: 10px 14px;
+}
+
+.catalog__button_primary {
+  margin-left: 10px;
+  padding: 10px 23px;
+  border: 2px solid #D67300;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  .navbar__ul {
+    margin-right: 20px;
+    min-width: 280px;
+  }
+  .main-display__bg {
+    object-fit: cover;
+  }
+  .main-display__photo {
+    top: 70px;
+    width: 589px;
+    height: 296px;
+  }
+  .main-display__title {
+    font-size: 50px;
+  }
+  .main-display__description {
+    font-size: 18px;
+  }
+  .catalog__card-img {
+    width: 119px;
+    height: 65px;
+  }
+  .catalog__card-img_large {
+    width: 110px;
+    height: 110px;
+  }
+  .catalog__card-right {
+    width: 290px;
+  }
+  .catalog__card-pricetag {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 909px;
+    width: 92%;
+  }
+  .navbar {
+    padding-top: 20px;
+  }
+  .navbar__logo {
+    width: 130px;
+    height: 24px;
+  }
+  .navbar__links-wrapper {
+    margin-left: 41px;
+    align-items: center;
+  }
+  .navbar__ul {
+    margin: 0;
+    margin-right: 42px;
+    min-width: 293px;
+  }
+  .navbar__item {
+    font-size: 16px;
+  }
+  .navbar__contacts {
+    font-size: 17px;
+  }
+  .main-display {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .main-display__bg {
+    top: -210px;
+    width: 1201px;
+    height: 748px;
+  }
+  .main-display__photo {
+    width: 435px;
+    height: 253px;
+  }
+  .main-display__content {
+    height: 530px;
+    margin: 0;
+  }
+  .main-display__title {
+    font-size: 55px;
+  }
+  .main-display__description {
+    font-size: 19px;
+  }
+  .catalog__card {
+    flex-basis: 48%;
+    justify-content: space-between;
+  }
+  .catalog__card-img {
+    width: 139px;
+    height: 65px;
+  }
+  .catalog__card-img_large {
+    width: 130px;
+    height: 130px;
+  }
+  .catalog__card-right {
+    width: 220px;
+  }
+  .catalog__card-title {
+    font-size: 16px;
+  }
+  .catalog__card-text {
+    font-size: 12px;
+  }
+  .catalog__card-pricetag {
+    margin-right: 15px;
+    font-size: 20px;
+  }
+  .catalog__buttons {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .catalog__button {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .rouble {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 653px;
+    width: 92%;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    background-color: #ffffff;
+    z-index: 999;
+  }
+  .navbar__logo {
+    width: 143px;
+    height: 33px;
+  }
+  .navbar__links-wrapper {
+    display: none;
+  }
+  .navbar__links-wrapper-mobile {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    overflow-y: scroll;
+    z-index: 999;
+  }
+  .navbar__links-wrapper-mobile_visible {
+    display: flex;
+  }
+  .navbar__ul {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar__item {
+    margin-bottom: 30px;
+  }
+  .navbar__social {
+    margin: 0;
+  }
+  .navbar__contacts {
+    margin-right: 100px;
+  }
+  .navbar__contacts-email {
+    display: none;
+  }
+  .navbar__contacts-email_mobile {
+    display: inline-block;
+    margin-top: 30px;
+  }
+  .navbar__contacts-phone {
+    margin: 0;
+  }
+  .main-display {
+    padding-bottom: 0;
+    padding-top: 40px;
+    margin-top: 70px;
+    height: 929px;
+  }
+  .main-display::after {
+    bottom: 0;
+  }
+  .main-display__bg {
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .main-display__photo {
+    right: 0;
+    width: 653px;
+    height: 366px;
+    top: 420px;
+  }
+  .main-display__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .main-display__title {
+    font-size: 60px;
+  }
+  .main-display__description {
+    font-size: 21px;
+  }
+  .catalog__card {
+    flex-basis: 100%;
+  }
+  .catalog__card:nth-last-child(2) {
+    margin-bottom: 20px;
+  }
+  .catalog__card-left {
+    margin-right: 0;
+  }
+  .catalog__card-right {
+    width: 300px;
+  }
+  .catalog__card-img {
+    width: 195px;
+    height: 115px;
+  }
+  .catalog__card-img_large {
+    width: 160px;
+    height: 160px;
+  }
+  .mobile-button {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 34px;
+    height: 18px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .mobile-button__line {
+    width: 34px;
+    height: 3px;
+    background-color: #282A4C;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .main-display__photo {
+    width: 100%;
+    height: auto;
+  }
+  .main-display__content {
+    width: 100%;
+  }
+  .main-display__title {
+    font-size: 50px;
+  }
+  .catalog__card-img {
+    width: 179px;
+    height: 105px;
+  }
+  .catalog__card-img_large {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 568px) {
+  .navbar {
+    padding-top: 14px;
+    padding-bottom: 12px;
+    height: 50px;
+  }
+  .navbar__logo {
+    width: 82px;
+    height: 15px;
+  }
+  .navbar__links-wrapper-mobile {
+    top: 50px;
+  }
+  .navbar__contacts {
+    margin-right: 50px;
+    font-size: 15px;
+  }
+  .mobile-button {
+    height: 9px;
+  }
+  .main-display {
+    margin-top: 50px;
+    padding-top: 68px;
+    height: 790px;
+  }
+  .main-display__bg {
+    top: -20px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+  .main-display__photo {
+    right: -16px;
+  }
+  .main-display__title {
+    font-size: 40px;
+  }
+  .main-display__description {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .main-display__form {
+    width: 178px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-display__form-name {
+    width: 178px;
+    margin-bottom: 20px;
+  }
+  .main-display__form-phone {
+    margin-bottom: 20px;
+  }
+  .main-display__form-button {
+    width: 100%;
+  }
+  .catalog__card {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .catalog__card-title {
+    font-size: 14px;
+  }
+  .catalog__card-left {
+    margin-bottom: 20px;
+  }
+  .catalog__card-right {
+    width: 100%;
+  }
+  .catalog__card-pricetag {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .catalog__buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .catalog__button {
+    padding: 5px 7px;
+  }
+  .catalog__button_primary {
+    padding: 5px 11.5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar__contacts {
+    margin: 0;
+  }
+  .navbar__line {
+    width: 24px;
+  }
+  .main-display {
+    height: 700px;
+  }
+  .main-display__title {
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+  .main-display__description {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
