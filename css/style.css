@@ -738,6 +738,95 @@ a {
   border: 2px solid #D67300;
 }
 
+.promo {
+  position: relative;
+  padding-top: 114px;
+  padding-bottom: 213px;
+}
+
+.promo__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 471px;
+  z-index: -1;
+  mix-blend-mode: luminosity;
+  opacity: 0.6;
+}
+
+.promo__container {
+  max-width: 706px;
+  margin: auto;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 109.5%;
+  color: #282A4D;
+  text-align: center;
+}
+
+.promo__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 671px;
+}
+
+.promo__form-name {
+  padding: 5px 5px;
+  width: 150px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #0E193E;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #282A4D;
+}
+
+.promo__form-phone {
+  padding: 5px 5px;
+  width: 178px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #0E193E;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #282A4D;
+}
+
+.promo__form-email {
+  padding: 5px 5px;
+  width: 178px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #0E193E;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #282A4D;
+}
+
+.promo__form-button {
+  padding: 10px 18px;
+  border: none;
+}
+
 @media (max-width: 1199px) {
   .container {
     max-width: 960px;
