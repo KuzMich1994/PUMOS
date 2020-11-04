@@ -437,23 +437,37 @@ a {
 
 .scroll-hidden {
   overflow: hidden;
+  padding-right: 17px;
 }
 
 .modal__overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  top: -10px;
+  left: -10px;
+  bottom: -10px;
+  right: -10px;
   background: rgba(66, 83, 84, 0.5);
-  z-index: 999;
-  overflow: auto;
-  overflow-y: scroll;
+  z-index: 0;
+  opacity: 0;
   visibility: hidden;
 }
 
 .modal__overlay_visible {
   visibility: visible;
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+.modal__scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  overflow-y: scroll;
+  z-index: 100;
+  visibility: hidden;
 }
 
 .modal__dialog {
@@ -468,7 +482,15 @@ a {
   align-items: center;
   background-color: #ffffff;
   border-radius: 16px;
+  opacity: 0;
+  visibility: hidden;
   z-index: 999;
+}
+
+.modal__dialog_visible {
+  visibility: visible;
+  opacity: 1;
+  transition: all .5s ease;
 }
 
 .modal__title {
@@ -533,12 +555,15 @@ a {
 
 .modal__button-close {
   position: absolute;
-  top: 22px;
-  right: 25px;
   padding: 0;
-  width: 16px;
-  height: 16px;
-  background-color: transparent;
+  top: 22px;
+  right: 21px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
   border: none;
   cursor: pointer;
   outline: none;
@@ -1582,6 +1607,9 @@ input[type="checkbox"]:checked:before {
   .footer__policy {
     font-size: 16px;
   }
+  .scroll-hidden {
+    padding: 0;
+  }
 }
 
 @media (max-width: 568px) {
@@ -1745,8 +1773,13 @@ input[type="checkbox"]:checked:before {
   .main-display__description {
     font-size: 14px;
   }
+}
+
+@media (max-height: 600px) {
   .modal__dialog {
-    margin-top: 0;
+    top: 60%;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 }
 
