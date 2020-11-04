@@ -369,6 +369,16 @@ body {
   margin: auto;
 }
 
+.container-small {
+  max-width: 706px;
+  margin: auto;
+}
+
+.container-info {
+  max-width: 1131px;
+  margin: auto;
+}
+
 img {
   width: 100%;
 }
@@ -756,11 +766,6 @@ a {
   opacity: 0.6;
 }
 
-.promo__container {
-  max-width: 706px;
-  margin: auto;
-}
-
 .promo__title {
   margin: 0;
   margin-bottom: 30px;
@@ -825,6 +830,158 @@ a {
 .promo__form-button {
   padding: 10px 18px;
   border: none;
+}
+
+.features {
+  padding-top: 27px;
+}
+
+.features__title {
+  margin-bottom: 50px;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 150.19%;
+  color: #0E193E;
+}
+
+.features__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.features__card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 46%;
+}
+
+.features__card-icon_produce {
+  width: 63px;
+  height: 59px;
+}
+
+.features__card-icon_individual {
+  width: 68px;
+  height: 67px;
+}
+
+.features__card-icon_guarantee {
+  width: 43px;
+  height: 60px;
+}
+
+.features__card-icon_control {
+  width: 92px;
+  height: 44px;
+}
+
+.features__card-title {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150.19%;
+  color: #0E193E;
+}
+
+.features__card-title_produce {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.features__card-title_individual {
+  margin-top: 16px;
+  margin-bottom: 19px;
+}
+
+.features__card-title_guarantee {
+  margin-top: 17px;
+  margin-bottom: 10px;
+}
+
+.features__card-title_control {
+  margin-top: 25px;
+  margin-bottom: 18px;
+}
+
+.features__card-description {
+  max-width: 323px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 147%;
+  color: #0E193E;
+}
+
+.features__card-description_produce {
+  margin: 0;
+  margin-bottom: 54px;
+  max-width: 291px;
+}
+
+.features__card-description_individual {
+  margin: 0;
+  margin-bottom: 54px;
+}
+
+.features__card-description_guarantee {
+  margin: 0;
+}
+
+.features__card-description_control {
+  margin: 0;
+}
+
+.info {
+  position: relative;
+}
+
+.info__bg {
+  position: absolute;
+  top: -61px;
+  max-width: 691px;
+  height: 766px;
+  mix-blend-mode: normal;
+  z-index: -1;
+}
+
+.info__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.info__image {
+  max-width: 670px;
+  max-height: 830px;
+}
+
+.info__text {
+  margin-top: 190px;
+  max-width: 345px;
+}
+
+.info__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 150.19%;
+  color: #282A4D;
+}
+
+.info__description {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 147%;
+  color: #282A4D;
 }
 
 @media (max-width: 1199px) {
