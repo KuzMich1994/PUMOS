@@ -1,6 +1,10 @@
 @media (max-width: 768px)
   .container
     width: 90%
+    &-small
+      width: 92%
+    &-info
+      width: 92%
   .main-display
     &__photo
       width: 100%
@@ -17,4 +21,28 @@
         &_large
           width: 130px
           height: 130px
+  .promo
+    &__title
+      font-size: 26px
+    &__form
+      margin: auto
+      width: 178px
+      flex-direction: column
+      &-name, &-phone, &-email
+        width: 178px
+        margin-bottom: 20px
+      &-button
+        width: 100%
+  .features
+    &__card
+      flex-basis: 46%
+      &-title
+        margin-top: 10px
+        margin-bottom: 15px
+        font-size: 20px
+      &-description
+        font-size: 16px
+      &-icon
+        width: 60px
+        height: 60px
   

@@ -12,59 +12,31 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-    align-items: center
+    align-items: flex-start
   &__card
     display: flex
     flex-direction: column
     flex-basis: 46%
+    &:nth-child(1), &:nth-child(2)
+      margin-bottom: 54px
     &-icon
-      &_produce
-        width: 63px
-        height: 59px
-      &_individual
-        width: 68px
-        height: 67px
-      &_guarantee
-        width: 43px
-        height: 60px
-      &_control
-        width: 92px
-        height: 44px
+      width: 70px
+      height: 70px
     &-title
+      margin-top: 10px
+      margin-bottom: 12px
       font-family: Montserrat Alternates
       font-style: normal
       font-weight: bold
       font-size: 24px
       line-height: 150.19%
       color: $text-color-secondary
-      &_produce
-        margin-top: 10px
-        margin-bottom: 20px
-      &_individual
-        margin-top: 16px
-        margin-bottom: 19px
-      &_guarantee
-        margin-top: 17px
-        margin-bottom: 10px
-      &_control
-        margin-top: 25px
-        margin-bottom: 18px
     &-description
+      margin: 0
       max-width: 323px
       font-style: normal
       font-weight: normal
       font-size: 18px
       line-height: 147%
       color: $text-color-secondary
-      &_produce
-        margin: 0
-        margin-bottom: 54px
-        max-width: 291px
-      &_individual
-        margin: 0
-        margin-bottom: 54px
-      &_guarantee
-        margin: 0
-      &_control
-        margin: 0
 
