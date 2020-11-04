@@ -14,6 +14,9 @@ body
   &-info
     max-width: 1131px
     margin: auto
+  &-footer
+    max-width: 1019px
+    margin: auto
 img
   width: 100%
 a
@@ -56,3 +59,115 @@ a
   display: none
 .scroll-hidden
   overflow: hidden
+.modal
+  &__overlay
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background: rgba(66, 83, 84, 0.5)
+    z-index: 999
+    overflow: auto
+    overflow-y: scroll
+    visibility: hidden
+    &_visible
+      visibility: visible
+  &__dialog
+    position: relative
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    padding: 51px 31px 46px 31px
+    width: 310px
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: #ffffff
+    border-radius: 16px
+    z-index: 999
+  &__title
+    margin: 0
+    margin-bottom: 7px
+    font-family: Montserrat Alternates
+    font-style: normal
+    font-weight: 600
+    font-size: 20px
+    line-height: 24px
+    color: #282A4C
+  &__text
+    margin: 0
+    margin-bottom: 14px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    color: #282A4C
+  &__form
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+  &__input
+    width: 200px
+    padding: 5px 5px
+    margin-bottom: 17px
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid #0E193E
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 30px
+    color: #444457
+    &_email
+      margin-bottom: 0
+  &__label
+    margin-top: 12px
+    margin-left: -15px
+    display: flex
+    align-items: center
+  &__button
+    padding: 9px 52px 11px 52px
+    margin-top: 24px
+    border: 2px solid #D67300
+    &-close
+      position: absolute
+      top: 22px
+      right: 25px
+      padding: 0
+      width: 16px
+      height: 16px
+      background-color: transparent
+      border: none
+      cursor: pointer
+      outline: none
+  &__deal
+    margin: 0
+    margin-top: 10px
+    max-width: 197px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 130%
+input[type="checkbox"]
+  margin-right: 3px
+  width: 18px
+  height: 18px
+  border: 1px solid #282A4C
+  border-radius: 3px
+  outline: none
+  display: flex
+  appearance: none
+  cursor: pointer
+input[type="checkbox"]:checked:before
+  content: ""
+  display: flex
+  width: 9px
+  height: 9px
+  border: 1px solid #282A4C
+  border-width: 0 1px 1px 0
+  transform: rotateZ(45deg)
+  margin-left: 3px
+  pointer-events: none

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ПУМОС - Бактерицидные УФ-облучатели</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.5.1.min.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -83,7 +84,7 @@
               <div class="catalog__buttons">
                 <span class="catalog__card-pricetag">9 900 <span class="rouble">c</span></span>
                 <button class="button-secondary catalog__button">Подробнее</button>
-                <button class="button-primary catalog__button catalog__button_primary">Заказать</button>
+                <button data-toggle="order" class="button-primary catalog__button catalog__button_primary">Заказать</button>
               </div>
         </div>
         <div class="catalog__card">
@@ -104,7 +105,7 @@
               <div class="catalog__buttons">
                 <span class="catalog__card-pricetag">13 900 <span class="rouble">c</span></span>
                 <button class="button-secondary catalog__button">Подробнее</button>
-                <button class="button-primary catalog__button catalog__button_primary">Заказать</button>
+                <button data-toggle="order" class="button-primary catalog__button catalog__button_primary">Заказать</button>
               </div>
         </div>
         <div class="catalog__card">
@@ -125,7 +126,7 @@
               <div class="catalog__buttons">
                 <span class="catalog__card-pricetag">17 900 <span class="rouble">c</span></span>
                 <button class="button-secondary catalog__button">Подробнее</button>
-                <button class="button-primary catalog__button catalog__button_primary">Заказать</button>
+                <button data-toggle="order" class="button-primary catalog__button catalog__button_primary">Заказать</button>
               </div>
         </div>
         <div class="catalog__card">
@@ -146,7 +147,7 @@
               <div class="catalog__buttons">
                 <span class="catalog__card-pricetag">17 900 <span class="rouble">c</span></span>
                 <button class="button-secondary catalog__button">Подробнее</button>
-                <button class="button-primary catalog__button catalog__button_primary">Заказать</button>
+                <button data-toggle="order" class="button-primary catalog__button catalog__button_primary">Заказать</button>
               </div>
         </div>
         <div class="catalog__card">
@@ -167,7 +168,7 @@
               <div class="catalog__buttons">
                 <span class="catalog__card-pricetag">17 900 <span class="rouble">c</span></span>
                 <button class="button-secondary catalog__button">Подробнее</button>
-                <button class="button-primary catalog__button catalog__button_primary">Заказать</button>
+                <button data-toggle="order" class="button-primary catalog__button catalog__button_primary">Заказать</button>
               </div>
         </div>
         <div class="catalog__card">
@@ -188,7 +189,7 @@
               <div class="catalog__buttons">
                 <span class="catalog__card-pricetag">17 900 <span class="rouble">c</span></span>
                 <button class="button-secondary catalog__button">Подробнее</button>
-                <button class="button-primary catalog__button catalog__button_primary">Заказать</button>
+                <button data-toggle="order" class="button-primary catalog__button catalog__button_primary">Заказать</button>
               </div>
         </div>
       </div>
@@ -240,7 +241,6 @@
     <div class="container-info">
       <div class="info__wrapper">
         <img src="img/info-image-2.png" alt="фон" class="info__image">
-        <!-- <img src="img/info-image.png" alt="фон" class="info__image"> -->
         <div class="info__text">
           <h2 class="info__title">О компании</h2>
           <p class="info__description">Более 20 лет мы работаем в сфере разработки и производства передовых инновационных энергосберегающих светодиодных систем
@@ -249,6 +249,72 @@
       </div>
     </div>
   </section>
+
+  <section class="promo">
+    <img src="img/promo-bg.png" alt="фон" class="promo__bg">
+    <div class="container-small">
+      <h2 class="promo__title_small">Остались вопросы?
+      Задавайте их нам!</h2>
+      <form action="#" class="promo__form">
+        <input type="text" class="promo__form-name" placeholder="Имя">
+        <input type="tel" class="promo__form-phone" placeholder="Телефон">
+        <input type="email" class="promo__form-email" placeholder="E-mail">
+        <button class="button-primary promo__form-button">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container-footer">
+      <div class="footer__top">
+        <a href="#" class="footer__logo">
+          <img src="img/footer-logo.svg" alt="Логотип">
+        </a>
+        <div class="footer__social-links">
+          <a href="#" class="footer__social-link">
+            <img src="img/vk.svg" alt="VKontakte">
+          </a>
+          <a href="#" class="footer__social-link">
+            <img src="img/inst.svg" alt="Instagram">
+          </a>
+          <a href="#" class="footer__social-link">
+            <img src="img/fb.svg" alt="Facebook">
+          </a>
+        </div>
+        <div class="footer__contacts">
+          <a href="tel:88005001392" class="footer__contacts-phone">8 (800) 500-13-92</a>
+          <a href="mailto:stop-covid-uf@pumos.ru" class="footer__contacts-email">stop-covid-uf@pumos.ru</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__address">Орёл, Наугорское ш., д.17к, пом.3</span>
+        <span class="footer__requisites">ОГРН 1063258798635</span>
+        <a href="#" class="footer__policy">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <div class="modal__overlay">
+      <div class="modal__dialog">
+        <button class="modal__button-close"><img src="img/close.svg" alt="Закрыть"></button>
+        <h2 class="modal__title">Оставьте заявку</h2>
+        <p class="modal__text">Оставьте заявку, мы перезоним в течении двух минут</p>
+        <form action="#" class="modal__form">
+          <input type="text" class="modal__input" placeholder="Имя">
+          <input type="tel" class="modal__input" placeholder="Телефон">
+          <input type="email" class="modal__input modal__input_email" placeholder="E-mail">
+          
+          <label for="legal" class="modal__label">
+            <input id="legal" type="checkbox" hidden>
+            <span class="modal__label-text">Юридическое лицо</span>
+          </label>
+          <button class="button-primary modal__button">Отправить</button>
+        </form>
+        <p class="modal__deal">Нажимая кнопу отправить вы соглашаетесь на обработку персональных данных</p>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
