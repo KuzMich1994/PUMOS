@@ -1,0 +1,137 @@
+.modal-info
+  &__overlay
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    background: rgba(66, 83, 84, 0.5)
+    z-index: 100
+    transition: .5s
+    opacity: 0
+    visibility: hidden
+    &_visible
+      visibility: visible
+      opacity: 1
+      transition: all .5s ease
+  &__scroll
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    overflow: auto
+    overflow-y: scroll
+    z-index: 100
+    visibility: hidden
+  &__dialog
+    position: relative
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    padding: 44px 59px 15px 54px
+    max-width: 824px
+    display: flex
+    flex-direction: column
+    background-color: #fff
+    border-radius: 16px
+    // transition: .5s
+    opacity: 0
+    visibility: hidden
+    z-index: 999
+    &_visible
+      visibility: visible
+      opacity: 1
+      transition: all .5s ease
+  &__top
+    margin-bottom: 32px
+    display: flex
+    align-items: flex-start
+    // flex-wrap: wrap
+    &-right
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+  &__middle
+    margin-bottom: 33px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  &__bottom
+    display: flex
+    flex-wrap: wrap
+  &__image
+    margin-right: 39px
+  &__title
+    margin-top: 12px
+    margin-bottom: 20px
+    font-family: Montserrat Alternates
+    font-style: normal
+    font-weight: 600
+    font-size: 20px
+    line-height: 24px
+    color: #282A4C
+    &-secondary
+      max-width: 200px
+      margin: 0
+      margin-bottom: 7px
+      display: flex
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 20px
+      line-height: 24px
+      color: #282A4C
+      flex-basis: 100%
+  &__button
+    padding: 10px 23px
+    border: 2px solid #D67300
+  &__description
+    margin: 0
+    margin-bottom: 7px
+    max-width: 548px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 24px
+    color: #282A4C
+    &:last-child
+      margin-bottom: 0
+  &__ul
+    padding: 0
+    margin: 0
+    display: flex
+    flex-direction: column
+    width: 308px
+    margin-right: 36px
+    list-style: none
+    &:last-child
+      margin-right: 0
+    &_right
+      width: 367px
+  &__param
+    line-height: 1.4
+  &__token
+    position: relative
+    display: block
+    overflow: hidden
+    font-style: normal
+    font-weight: normal
+    font-size: 17px
+    line-height: 175%
+    color: #282A4C
+    &::after
+      position: absolute
+      content: ''
+      width: 100%
+      bottom: 8px
+      margin-left: 5px
+      border-bottom: 1px dotted #282A4C
+      z-index: 1000
+    &_bold
+      padding-left: 10px
+      float: right
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 175%
