@@ -1262,6 +1262,7 @@ input[type="checkbox"]:checked:before {
   transform: translate(-50%, -50%);
   padding: 44px 59px 15px 54px;
   max-width: 824px;
+  width: 90%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -1722,6 +1723,13 @@ input[type="checkbox"]:checked:before {
   .modal__dialog {
     margin-top: 30px;
   }
+  .modal-info__dialog {
+    margin-bottom: 20px;
+  }
+  .modal-info__ul {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1733,6 +1741,9 @@ input[type="checkbox"]:checked:before {
   }
   .container-info {
     width: 92%;
+  }
+  .scroll-hidden {
+    padding: 0;
   }
   .main-display__photo {
     width: 100%;
@@ -1803,8 +1814,28 @@ input[type="checkbox"]:checked:before {
   .footer__policy {
     font-size: 16px;
   }
-  .scroll-hidden {
-    padding: 0;
+  .modal__button-close_info {
+    right: 25px;
+  }
+  .modal-info__dialog {
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-left: 30px;
+  }
+  .modal-info__title {
+    font-size: 18px;
+  }
+  .modal-info__title-secondary {
+    font-size: 18px;
+  }
+  .modal-info__image {
+    margin-right: 20px;
+  }
+  .modal-info__description {
+    font-size: 16px;
+  }
+  .modal-info__middle {
+    margin-bottom: 15px;
   }
 }
 
@@ -1950,6 +1981,37 @@ input[type="checkbox"]:checked:before {
     margin-right: 0;
     margin-bottom: 20px;
   }
+  .modal__button-close_info {
+    top: 15px;
+    right: 15px;
+  }
+  .modal-info__dialog {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .modal-info__top {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .modal-info__top-right {
+    justify-content: center;
+  }
+  .modal-info__image {
+    width: 100%;
+  }
+  .modal-info__title {
+    text-align: center;
+    font-size: 16px;
+  }
+  .modal-info__description {
+    font-size: 14px;
+  }
+  .modal-info__token {
+    font-size: 14px;
+  }
+  .modal-info__token_bold {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1969,6 +2031,30 @@ input[type="checkbox"]:checked:before {
   .main-display__description {
     font-size: 14px;
   }
+  .modal-info__token {
+    font-size: 12px;
+  }
+  .modal-info__token_bold {
+    font-size: 12px;
+  }
+}
+
+@media (max-height: 812px) {
+  .modal-info__dialog {
+    top: 75%;
+  }
+}
+
+@media (max-height: 757px) {
+  .modal-info__dialog {
+    top: 76%;
+  }
+}
+
+@media (max-height: 700px) {
+  .modal-info__dialog {
+    top: 80%;
+  }
 }
 
 @media (max-height: 600px) {
@@ -1976,6 +2062,9 @@ input[type="checkbox"]:checked:before {
     top: 60%;
     margin-top: 80px;
     margin-bottom: 80px;
+  }
+  .modal-info__dialog {
+    top: 94%;
   }
 }
 
