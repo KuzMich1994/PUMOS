@@ -17,7 +17,7 @@ function openModal() {
   let modalDialog = $('.modal__dialog')
   modalOverlay.addClass('modal__overlay_visible')
   modalDialog.addClass('modal__dialog_visible')
-  $('body').addClass('scroll-hidden')
+  // $('body').addClass('scroll-hidden')
 }
 
 function closeModal() {
@@ -25,7 +25,7 @@ function closeModal() {
   let modalDialog = $('.modal__dialog')
   modalOverlay.removeClass('modal__overlay_visible')
   modalDialog.removeClass('modal__dialog_visible')
-  $('body').removeClass('scroll-hidden')
+  // $('body').removeClass('scroll-hidden')
 }
 $(document).click(function(e) {
   if($(e.target).is('.modal__overlay')) {
