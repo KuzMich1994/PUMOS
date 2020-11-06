@@ -756,14 +756,14 @@ input[type="checkbox"]:checked:before {
 .main-display {
   position: relative;
   padding-top: 123px;
-  padding-bottom: 100p1;
+  padding-bottom: 1px;
 }
 
 .main-display::after {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 100px;
+  bottom: 0;
   content: '';
   width: 100%;
   height: 121px;
