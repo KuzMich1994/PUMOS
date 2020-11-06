@@ -7,8 +7,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery-3.5.1.min.js" defer></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -63,7 +65,27 @@
         <div class="product__card">
           <h1 class="product__title">Модель СЭС-01-1-UF-40-220-AC</h1>
           <div class="product__card-top">
-            <img src="img/product-image.png" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image">
+            <!-- Slider main container -->
+            <div class="swiper-container product-slider">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide product-slider__slide"><img src="/img/product-image.png" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
+                <div class="swiper-slide product-slider__slide"><img src="/img/product-image-2.jpg" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
+                <div class="swiper-slide product-slider__slide"><img src="/img/product-image-3.jpg" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="product-slider__pagination">
+                <span class="product-slider__bullet"><img src="img/product-image-2.jpg" alt="Кнопка" class="product-slider__bullet-image"></span>
+                <span class="product-slider__bullet"><img src="img/product-image-3.jpg" alt="Кнопка" class="product-slider__bullet-image"></span>
+                <span class="product-slider__bullet"><img src="img/product-image-4.jpg" alt="Кнопка" class="product-slider__bullet-image"></span>
+              </div>
+            
+              <!-- If we need navigation buttons -->
+              <button class="product-slider__button product-slider__button-prev"></button>
+              <button class="product-slider__button product-slider__button-next"></button>
+            
+            </div>
             <ul class="product__ul">
               <li class="product__item">
                 <span class="product__item-text_bold">Закрытый</span>

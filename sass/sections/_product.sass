@@ -1,11 +1,45 @@
 .product
   padding-top: 16px
+  &-slider
+    max-width: 282px
+    min-height: 261px
+    margin: 0
+    margin-right: 100px
+    &__pagination
+      position: absolute
+      bottom: 0 !important
+      left: 50% !important
+      transform: translateX(-50%)
+      width: 167px !important
+      display: flex
+      justify-content: space-between
+      z-index: 999
+    &__bullet
+      width: 52px
+      height: 52px
+      border-radius: 6px
+      overflow: hidden
+      cursor: pointer
+      &-image
+        width: 52px
+        height: 52px
+        object-fit: cover
+    &__button
+      position: absolute
+      bottom: 17px
+      width: 16px
+      height: 16px
+      border: none
+      background-color: transparent
+      outline: none
+      cursor: pointer
+
   &__card
     display: flex
     flex-direction: column
     justify-content: flex-start
     &-top
-      margin-bottom: 64px
+      margin-bottom: 61px
       display: flex
       align-items: flex-start
     &-middle
@@ -42,8 +76,8 @@
       color: $text-color-more
   &__image
     margin-right: 79px
-    width: 342px
-    height: 201px
+    width: 282px
+    height: 176px
     object-fit: cover
   &__ul
     padding: 0

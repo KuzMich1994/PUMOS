@@ -78,4 +78,27 @@ $(document).click(function(e) {
     hiddenButton.classList.add('product__button_hidden')
   })
 
+  var mySwiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  simulateTouch: false,
+
+  // If we need pagination
+  pagination: {
+    el: '.product-slider__pagination',
+    bulletClass: "product-slider__bullet",
+    bulletActiveClass: "product-slider__bullet_active",
+    clickable: true,
+    type: "custom"
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.product__button-next',
+    prevEl: '.product__button-prev',
+  },
+
+})
+
 })
