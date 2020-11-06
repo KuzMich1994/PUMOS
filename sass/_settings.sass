@@ -198,13 +198,25 @@ input[type="checkbox"]
   display: flex
   appearance: none
   cursor: pointer
+input[type="checkbox"]:checked
+  margin-right: 3px
+  width: 18px
+  height: 18px
+  border-radius: 3px
+  background-color: $primary
+  border: none
+  outline: none
+  display: flex
+  appearance: none
+  cursor: pointer
 input[type="checkbox"]:checked:before
   content: ""
   display: flex
-  width: 9px
-  height: 9px
-  border: 1px solid #282A4C
-  border-width: 0 1px 1px 0
+  width: 6px
+  height: 10px
+  border: 2px solid #ffffff
+  border-width: 0 2px 2px 0
   transform: rotateZ(45deg)
-  margin-left: 3px
+  margin-top: 1px
+  margin-left: 5px
   pointer-events: none

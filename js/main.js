@@ -61,4 +61,21 @@ $(document).click(function(e) {
   }
 })
 
+  let readButton = document.querySelector('.product__button');
+  let hiddenButton = document.querySelector('.product__button_hidden');
+  let productDescriptionWrapper = document.querySelector('.product__description-wrapper');
+  let productCardMiddle = document.querySelector('.product__card-middle');
+  readButton.addEventListener('click', function() {
+    productDescriptionWrapper.classList.add('product__description-wrapper_full')
+    productCardMiddle.classList.add('product__card-middle_full')
+    readButton.classList.add('product__button_hidden')
+    hiddenButton.classList.remove('product__button_hidden')
+  })
+  hiddenButton.addEventListener('click', function() {
+    productDescriptionWrapper.classList.remove('product__description-wrapper_full')
+    productCardMiddle.classList.remove('product__card-middle_full')
+    readButton.classList.remove('product__button_hidden')
+    hiddenButton.classList.add('product__button_hidden')
+  })
+
 })

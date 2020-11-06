@@ -1,0 +1,25 @@
+.breadcrumbs
+  padding-top: 69px
+  &__list
+    padding: 0
+    margin: 0
+    display: flex
+    align-items: center
+    list-style: none
+  &__item
+    font-family: Open Sans, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 19px
+    color: #131132
+    &:not(:first-child)
+      &::before
+        content: '>'
+        margin-left: 10px
+        margin-right: 10px
+        color: #999999
+    &:last-child
+      color: #999999
+  &__link
+    text-decoration: none
