@@ -1098,6 +1098,10 @@ input[type="checkbox"]:checked:before {
   color: #0E193E;
 }
 
+.catalog__card-link {
+  text-decoration: none;
+}
+
 .catalog__card-ul {
   padding: 0;
   margin: 0;
@@ -1119,6 +1123,7 @@ input[type="checkbox"]:checked:before {
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
+  color: #0E193E;
 }
 
 .catalog__card-text_bold {
@@ -1126,6 +1131,7 @@ input[type="checkbox"]:checked:before {
   font-weight: bold;
   font-size: 16px;
   line-height: 130.9%;
+  color: #0E193E;
 }
 
 .catalog__buttons {
