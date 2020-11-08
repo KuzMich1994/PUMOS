@@ -7,14 +7,20 @@ menuButton.addEventListener('click', function() {
 
 let modalButton = $('[data-toggle="order"]');
 let modalButtonInfo = $('[data-toggle="info"]');
+let sertificateButton = $('[data-toggle="sertificate"]');
+let appendixButton = $('[data-toggle="appendix"]');
 let modalButtonClose = $('.modal__button-close');
 let modalButtonCloseInfo = $('.modal-info__button-close');
 let modalClose = $('.modal__overlay');
+let modalPhotoClose = $('.modal-photo__image');
 modalButton.on('click', openModal);
 modalButtonClose.on('click', closeModal);
 modalClose.on('click', closeModal);
 modalButtonInfo.on('click', openModalInfo);
 modalButtonCloseInfo.on('click', closeModalInfo);
+sertificateButton.on('click', openModalPhotoSertificate);
+appendixButton.on('click', openModalPhotoAppendix);
+modalPhotoClose.on('click', closeModal);
 
 function openModal() {
   let modalOverlay = $('.modal__overlay')
@@ -36,11 +42,31 @@ function openModalInfo() {
   $('body').addClass('scroll-hidden')
 }
 
+function openModalPhotoSertificate() {
+  let modalPhotoOverlay = $('.modal-photo__overlay')
+  let modalPhotoSertificateDialog = $('.modal-photo__sertificate-dialog')
+  modalPhotoOverlay.addClass('modal-photo__overlay_visible')
+  modalPhotoSertificateDialog.addClass('modal-photo__sertificate-dialog_visible')
+}
+
+function openModalPhotoAppendix() {
+  let modalPhotoOverlay = $('.modal-photo__overlay')
+  let modalPhotoAppendixDialog = $('.modal-photo__app-dialog')
+  modalPhotoOverlay.addClass('modal-photo__overlay_visible')
+  modalPhotoAppendixDialog.addClass('modal-photo__app-dialog_visible')
+}
+
 function closeModal() {
   let modalOverlay = $('.modal__overlay')
   let modalDialog = $('.modal__dialog')
+  let modalPhotoOverlay = $('.modal-photo__overlay')
+  let modalPhotoSertificateDialog = $('.modal-photo__sertificate-dialog')
+  let modalPhotoAppendixDialog = $('.modal-photo__app-dialog')
   modalOverlay.removeClass('modal__overlay_visible')
   modalDialog.removeClass('modal__dialog_visible')
+  modalPhotoOverlay.removeClass('modal-photo__overlay_visible')
+  modalPhotoSertificateDialog.removeClass('modal-photo__sertificate-dialog_visible')
+  modalPhotoAppendixDialog.removeClass('modal-photo__app-dialog_visible')
   $('body').removeClass('scroll-hidden')
 }
 function closeModalInfo() {
@@ -58,6 +84,12 @@ $(document).click(function(e) {
 $(document).click(function(e) {
   if($(e.target).is('.modal-info__overlay')) {
     closeModalInfo();
+  }
+})
+
+$(document).click(function(e) {
+  if($(e.target).is('.modal-photo__overlay')) {
+    closeModal();
   }
 })
 

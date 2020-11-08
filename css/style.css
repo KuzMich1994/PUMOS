@@ -618,6 +618,60 @@ input[type="checkbox"]:checked:before {
   pointer-events: none;
 }
 
+.modal-photo__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(66, 83, 84, 0.5);
+  z-index: 100;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-photo__overlay_visible {
+  visibility: visible;
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+.modal-photo__sertificate-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-photo__sertificate-dialog_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-photo__app-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-photo__app-dialog_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-photo__image {
+  width: 580px;
+  cursor: zoom-out;
+}
+
 .navbar {
   position: relative;
   padding-top: 45px;
@@ -1304,6 +1358,7 @@ input[type="checkbox"]:checked:before {
 .documents__image {
   width: 239px;
   height: 337px;
+  cursor: zoom-in;
 }
 
 .catalog {

@@ -206,3 +206,47 @@ input[type="checkbox"]:checked:before
   margin-top: 1px
   margin-left: 5px
   pointer-events: none
+
+.modal-photo
+  &__overlay
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background: rgba(66, 83, 84, 0.5)
+    z-index: 100
+    transition: .5s
+    opacity: 0
+    visibility: hidden
+    &_visible
+      visibility: visible
+      opacity: 1
+      transition: all .5s ease
+  &__sertificate
+    &-dialog
+      position: fixed
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: 999
+      opacity: 0
+      visibility: hidden
+      &_visible
+        visibility: visible
+        opacity: 1
+  &__app
+    &-dialog
+      position: fixed
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: 999
+      opacity: 0
+      visibility: hidden
+      &_visible
+        visibility: visible
+        opacity: 1
+  &__image
+    width: 580px
+    cursor: zoom-out
