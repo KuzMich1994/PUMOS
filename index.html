@@ -303,13 +303,13 @@
         </button>
         <h2 class="modal__title">Оставьте заявку</h2>
         <p class="modal__text">Оставьте заявку, мы перезоним в течении двух минут</p>
-        <form action="#" class="modal__form">
+        <form id="modal" action="#" class="modal__form">
           <input type="text" class="modal__input" placeholder="Имя">
           <input type="tel" class="modal__input" placeholder="Телефон">
           <input type="email" class="modal__input modal__input_email" placeholder="E-mail">
   
           <label for="legal" class="modal__label">
-            <input id="legal" type="checkbox" hidden>
+            <input form="modal" id="legal" type="checkbox" hidden>
             <span class="modal__label-text">Юридическое лицо</span>
           </label>
           <button class="button-primary modal__button">Отправить</button>
@@ -323,7 +323,7 @@
     <div class="modal-info__overlay"></div>
     <div class="modal-info__scroll">
       <div class="modal-info__dialog">
-        <button class="modal__button-close_info"></button>
+        <button class="modal-info__button-close"></button>
         <div class="modal-info__top">
           <img src="img/card-image-small.jpg" alt="Ультрафиолетовый облучатель рециркулятор воздуха СЭС-01-1-UF" class="modal-info__image">
           <div class="modal-info__top-right">

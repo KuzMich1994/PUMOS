@@ -8,7 +8,7 @@ menuButton.addEventListener('click', function() {
 let modalButton = $('[data-toggle="order"]');
 let modalButtonInfo = $('[data-toggle="info"]');
 let modalButtonClose = $('.modal__button-close');
-let modalButtonCloseInfo = $('.modal__button-close_info');
+let modalButtonCloseInfo = $('.modal-info__button-close');
 let modalClose = $('.modal__overlay');
 modalButton.on('click', openModal);
 modalButtonClose.on('click', closeModal);
@@ -95,10 +95,46 @@ $(document).click(function(e) {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.product__button-next',
-    prevEl: '.product__button-prev',
+    nextEl: '.product-slider__button-next',
+    prevEl: '.product-slider__button-prev',
   },
 
 })
 
+let pricetag = document.querySelector('.product__pay-pricetag');
+let counter = document.querySelector('.counter');
+let stand = document.querySelector('.stand');
+pricetag.textContent = '6 300'
+
+counter.addEventListener('click', (event) => {
+    if (event.currentTarget.checked) {
+        if (stand.checked) {
+            pricetag.textContent = '9 600'
+        } else {
+            pricetag.textContent = '7 800'
+        }
+    } else {
+        if (stand.checked) {
+            pricetag.textContent = '8 100'
+        } else {
+            pricetag.textContent = '6 300'
+        }
+    }
+})
+
+stand.addEventListener('click', (event) => {
+    if (event.currentTarget.checked) {
+        if (counter.checked) {
+            pricetag.textContent = '9 600'
+        } else {
+            pricetag.textContent = '8 100'
+        }
+    } else {
+        if (counter.checked) {
+            pricetag.textContent = '7 800'
+        } else {
+            pricetag.textContent = '6 300'
+        }
+    }
+})
 })

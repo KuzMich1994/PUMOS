@@ -51,14 +51,14 @@
       </div>
     </div>
   </header>
-  <section class="breadcrumbs">
+  <nav class="breadcrumbs">
     <div class="container">
       <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item"><a href="/pumos" class="breadcrumbs__link">Главная</a></li>
         <li class="breadcrumbs__item">Модель СЭС-01-1-UF-40-220-AC</li>
       </ul>
     </div>
-  </section>
+  </nav>
   <main class="product">
     <div class="container">
       <div class="product__wrapper">
@@ -70,9 +70,9 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide product-slider__slide"><img src="/img/product-image.png" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
-                <div class="swiper-slide product-slider__slide"><img src="/img/product-image-2.jpg" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
-                <div class="swiper-slide product-slider__slide"><img src="/img/product-image-3.jpg" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
+                <div class="swiper-slide product-slider__slide"><img src="img/product-image.png" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
+                <div class="swiper-slide product-slider__slide"><img src="img/product-image-2.jpg" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
+                <div class="swiper-slide product-slider__slide"><img src="img/product-image-3.jpg" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
               </div>
               <!-- If we need pagination -->
               <div class="product-slider__pagination">
@@ -86,7 +86,7 @@
               <button class="product-slider__button product-slider__button-next"></button>
             
             </div>
-            <ul class="product__ul">
+            <ul class="product__ul product__ul_568">
               <li class="product__item">
                 <span class="product__item-text_bold">Закрытый</span>
                 <span class="product__item-text">Корпус</span>
@@ -193,12 +193,227 @@
             </ul>
           </div>
         </div>
-        <div class="product__pay">
-  
+        <div class="product__left">
+          <div class="product__pay">
+            <div class="product__pay-card">
+              <div class="product__pay-top">
+                <span class="product__pay-pricetag">6 300 </span>
+                <span class="product__pay-rouble">c</span>
+                <button data-toggle="order" class="button-primary product__pay-button">Заказать</button>
+                <label for="counter" class="product__pay-label">
+                  <input form="modal" type="checkbox" id="counter" class="counter">
+                  <span class="product__pay-label-text">Добавить счетчик в комплект</span>
+                  <span class="product__pay-label-info" title="'Информационный текст'"></span>
+                </label>
+                <label for="stand" class="product__pay-label">
+                  <input form="modal" type="checkbox" id="stand" class="stand">
+                  <span class="product__pay-label-text">Добавить стойку в комплект</span>
+                  <span class="product__pay-label-info" title="'Информационный текст'"></span>
+                </label>
+              </div>
+              <div class="product__pay-bottom">
+                <div class="product__pay-way">
+                  <img src="img/prodict-pay-icon-2.svg" alt="Доставка" class="product__pay-way-icon">
+                  <span class="product__pay-way-info">Доставка курьером сегодня</span>  
+                </div>
+                <div class="product__pay-way">
+                  <img src="img/prodict-pay-icon-1.svg" alt="Самовывоз" class="product__pay-way-icon">
+                  <span class="product__pay-way-info"><span class="product__pay-way-info_stroke">Самовывоз</span> (с 10:00 до 18:00)</span>
+                </div>
+                <div class="product__pay-payment">
+                  <span class="product__pay-payment-text">Мы принимаем к оплате</span>
+                  <img src="img/mastercard.svg" alt="MasterCard" class="product__pay-payment-icon product__pay-payment-icon_small">
+                  <img src="img/masterto.svg" alt="Masterto" class="product__pay-payment-icon product__pay-payment-icon_small">
+                  <img src="img/visa.svg" alt="VISA" class="product__pay-payment-icon product__pay-payment-icon_large">
+                  <img src="img/world.svg" alt="МИР" class="product__pay-payment-icon product__pay-payment-icon_large">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__download">
+            <h2 class="product__download-title">Скачать журнал учета времени работы рециркулятора</h2>
+              <div class="product__download-buttons">
+                <a href="#" class="product__download-button product__download-button_red" download>Скачать PDF</a>
+                <a href="#" class="product__download-button product__download-button_blue" download>Скачать DOC</a>
+              </div>
+          </div>
         </div>
       </div>
     </div>
   </main>
+
+  <section class="documents">
+    <img src="img/documents-bg.png" alt="Фон" class="documents__bg">
+    <div class="container">
+      <h2 class="documents__title">Документы</h2>
+      <img src="img/sertificate.png" alt="Сертификат" class="documents__image">
+      <img src="img/appendix.png" alt="Приложение" class="documents__image">
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="container">
+      <h2 class="catalog__title catalog__title_second">Другие товары</h2>
+      <div class="catalog__cards">
+        <div class="catalog__card">
+          <div class="catalog__card-left">
+            <img src="img/card-image-small.jpg" alt="Модель СЭС-01-1-UF-40-220-AC" class="catalog__card-img">
+          </div>
+          <div class="catalog__card-right">
+            <div class="catalog__card-info">
+              <h3 class="catalog__card-title"><a href="/pumos/product-page.html" class="catalog__card-link">Модель
+                  СЭС-01-1-UF-40-220-AC</a></h3>
+              <ul class="catalog__card-ul">
+                <li class="catalog__card-item"><span class="catalog__card-text">Производительность</span><span
+                    class="catalog__card-text catalog__card-text_bold">40 м³/ч</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Габариты (Д*В*Ш)</span><span
+                    class="catalog__card-text catalog__card-text_bold">550*100*100 мм</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Счетчик работы</span><span
+                    class="catalog__card-text catalog__card-text_bold">опционально</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Вес</span><span
+                    class="catalog__card-text catalog__card-text_bold">2.0 кг</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="catalog__buttons">
+            <span class="catalog__card-pricetag">9 900 <span class="rouble">c</span></span>
+            <button data-toggle="info" class="button-secondary catalog__button">Подробнее</button>
+            <button data-toggle="order" class="button-primary catalog__button catalog__button_primary">Заказать</button>
+          </div>
+        </div>
+        <div class="catalog__card">
+          <div class="catalog__card-left">
+            <img src="img/card-image-small.jpg" alt="Модель СЭС-01-1-UF-40-220-AC" class="catalog__card-img">
+          </div>
+          <div class="catalog__card-right">
+            <div class="catalog__card-info">
+              <h3 class="catalog__card-title">Модель СЭС-01-1-UF-80-220-AC</h3>
+              <ul class="catalog__card-ul">
+                <li class="catalog__card-item"><span class="catalog__card-text">Производительность</span><span
+                    class="catalog__card-text catalog__card-text_bold">80 м³/ч</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Габариты (Д*В*Ш)</span><span
+                    class="catalog__card-text catalog__card-text_bold">550*100*100 мм</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Счетчик работы</span><span
+                    class="catalog__card-text catalog__card-text_bold">опционально</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Вес</span><span
+                    class="catalog__card-text catalog__card-text_bold">2.1 кг</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="catalog__buttons">
+            <span class="catalog__card-pricetag">13 900 <span class="rouble">c</span></span>
+            <button data-toggle="info" class="button-secondary catalog__button">Подробнее</button>
+            <button data-toggle="order" class="button-primary catalog__button catalog__button_primary">Заказать</button>
+          </div>
+        </div>
+        <div class="catalog__card">
+          <div class="catalog__card-left">
+            <img src="img/card-image-large.jpg" alt="Модель СЭС-01-1-UF-160-220-AC"
+              class="catalog__card-img catalog__card-img_large">
+          </div>
+          <div class="catalog__card-right">
+            <div class="catalog__card-info">
+              <h3 class="catalog__card-title">Модель СЭС-01-1-UF-160-220-AC</h3>
+              <ul class="catalog__card-ul">
+                <li class="catalog__card-item"><span class="catalog__card-text">Производительность</span><span
+                    class="catalog__card-text catalog__card-text_bold">160 м³/ч</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Габариты (Д*В*Ш)</span><span
+                    class="catalog__card-text catalog__card-text_bold">320*305*95 мм</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Счетчик работы</span><span
+                    class="catalog__card-text catalog__card-text_bold">опционально</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Вес</span><span
+                    class="catalog__card-text catalog__card-text_bold">2.9 кг</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="catalog__buttons">
+            <span class="catalog__card-pricetag">17 900 <span class="rouble">c</span></span>
+            <button data-toggle="info" class="button-secondary catalog__button">Подробнее</button>
+            <button data-toggle="order" class="button-primary catalog__button catalog__button_primary">Заказать</button>
+          </div>
+        </div>
+        <div class="catalog__card">
+          <div class="catalog__card-left">
+            <img src="img/card-image-large.jpg" alt="Модель СЭС-01-1-UF-160-220-AC"
+              class="catalog__card-img catalog__card-img_large">
+          </div>
+          <div class="catalog__card-right">
+            <div class="catalog__card-info">
+              <h3 class="catalog__card-title">Модель СЭС-01-1-UF-160-220-AC</h3>
+              <ul class="catalog__card-ul">
+                <li class="catalog__card-item"><span class="catalog__card-text">Производительность</span><span
+                    class="catalog__card-text catalog__card-text_bold">160 м³/ч</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Габариты (Д*В*Ш)</span><span
+                    class="catalog__card-text catalog__card-text_bold">320*305*95 мм</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Счетчик работы</span><span
+                    class="catalog__card-text catalog__card-text_bold">опционально</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Вес</span><span
+                    class="catalog__card-text catalog__card-text_bold">2.9 кг</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="catalog__buttons">
+            <span class="catalog__card-pricetag">17 900 <span class="rouble">c</span></span>
+            <button data-toggle="info" class="button-secondary catalog__button">Подробнее</button>
+            <button data-toggle="order" class="button-primary catalog__button catalog__button_primary">Заказать</button>
+          </div>
+        </div>
+        <div class="catalog__card">
+          <div class="catalog__card-left">
+            <img src="img/card-image-large.jpg" alt="Модель СЭС-01-1-UF-160-220-AC"
+              class="catalog__card-img catalog__card-img_large">
+          </div>
+          <div class="catalog__card-right">
+            <div class="catalog__card-info">
+              <h3 class="catalog__card-title">Модель СЭС-01-1-UF-160-220-AC</h3>
+              <ul class="catalog__card-ul">
+                <li class="catalog__card-item"><span class="catalog__card-text">Производительность</span><span
+                    class="catalog__card-text catalog__card-text_bold">160 м³/ч</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Габариты (Д*В*Ш)</span><span
+                    class="catalog__card-text catalog__card-text_bold">320*305*95 мм</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Счетчик работы</span><span
+                    class="catalog__card-text catalog__card-text_bold">опционально</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Вес</span><span
+                    class="catalog__card-text catalog__card-text_bold">2.9 кг</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="catalog__buttons">
+            <span class="catalog__card-pricetag">17 900 <span class="rouble">c</span></span>
+            <button data-toggle="info" class="button-secondary catalog__button">Подробнее</button>
+            <button data-toggle="order" class="button-primary catalog__button catalog__button_primary">Заказать</button>
+          </div>
+        </div>
+        <div class="catalog__card">
+          <div class="catalog__card-left">
+            <img src="img/card-image-large.jpg" alt="Модель СЭС-01-1-UF-160-220-AC"
+              class="catalog__card-img catalog__card-img_large">
+          </div>
+          <div class="catalog__card-right">
+            <div class="catalog__card-info">
+              <h3 class="catalog__card-title">Модель СЭС-01-1-UF-160-220-AC</h3>
+              <ul class="catalog__card-ul">
+                <li class="catalog__card-item"><span class="catalog__card-text">Производительность</span><span
+                    class="catalog__card-text catalog__card-text_bold">160 м³/ч</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Габариты (Д*В*Ш)</span><span
+                    class="catalog__card-text catalog__card-text_bold">320*305*95 мм</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Счетчик работы</span><span
+                    class="catalog__card-text catalog__card-text_bold">опционально</span></li>
+                <li class="catalog__card-item"><span class="catalog__card-text">Вес</span><span
+                    class="catalog__card-text catalog__card-text_bold">2.9 кг</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="catalog__buttons">
+            <span class="catalog__card-pricetag">17 900 <span class="rouble">c</span></span>
+            <button data-toggle="info" class="button-secondary catalog__button">Подробнее</button>
+            <button data-toggle="order" class="button-primary catalog__button catalog__button_primary">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <footer class="footer">
     <div class="container-footer">
       <div class="footer__top">
@@ -228,5 +443,118 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal">
+    <div class="modal__overlay">
+    </div>
+    <div class="modal__scroll">
+      <div class="modal__dialog">
+        <button class="modal__button-close">
+        </button>
+        <h2 class="modal__title">Оставьте заявку</h2>
+        <p class="modal__text">Оставьте заявку, мы перезоним в течении двух минут</p>
+        <form id="modal" action="#" class="modal__form">
+          <input type="text" class="modal__input" placeholder="Имя">
+          <input type="tel" class="modal__input" placeholder="Телефон">
+          <input type="email" class="modal__input modal__input_email" placeholder="E-mail">
+  
+          <label for="legal" class="modal__label">
+            <input form="modal" id="legal" type="checkbox" hidden>
+            <span class="modal__label-text">Юридическое лицо</span>
+          </label>
+          <button class="button-primary modal__button">Отправить</button>
+        </form>
+        <p class="modal__deal">Нажимая кнопу отправить вы соглашаетесь на обработку персональных данных</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-info">
+    <div class="modal-info__overlay"></div>
+    <div class="modal-info__scroll">
+      <div class="modal-info__dialog">
+        <button class="modal-info__button-close"></button>
+        <div class="modal-info__top">
+          <img src="img/card-image-small.jpg" alt="Ультрафиолетовый облучатель рециркулятор воздуха СЭС-01-1-UF"
+            class="modal-info__image">
+          <div class="modal-info__top-right">
+            <h2 class="modal-info__title">Ультрафиолетовый облучатель рециркулятор воздуха СЭС-01-1-UF</h2>
+            <button data-toggle="order" class="button-primary modal-info__button">Заказать</button>
+          </div>
+        </div>
+        <div class="modal-info__middle">
+          <h3 class="modal-info__title-secondary">Описание</h3>
+          <p class="modal-info__description">Компактный рециркулятор для обеззараживания воздуха в небольших помещениях и
+            на транспорте.</p>
+          <p class="modal-info__description">Корпус выполнен из высококачественной стали и имеет возможность креления к
+            различным поверхностям.</p>
+        </div>
+        <h3 class="modal-info__title-secondary">Характеристики</h3>
+        <div class="modal-info__bottom">
+          <ul class="modal-info__ul">
+            <li class="modal-info__item">
+              <span class="modal-info__token_bold">Закрытый</span>
+              <span class="modal-info__token">Корпус</span>
+            </li>
+            <li class="modal-info__item">
+              <span class="modal-info__token_bold">Cталь</span>
+              <span class="modal-info__token">Материал</span>
+            </li>
+            <li class="modal-info__item">
+              <span class="modal-info__token_bold">220 В</span>
+              <span class="modal-info__token">Питание</span>
+            </li>
+            <li class="modal-info__item">
+              <span class="modal-info__token_bold">1 шт</span>
+              <span class="modal-info__token">Кол-ва ламп</span>
+            </li>
+            <li class="modal-info__item">
+              <span class="modal-info__token_bold">2 шт</span>
+              <span class="modal-info__token">Вентиляторы</span>
+            </li>
+            <li class="modal-info__item">
+              <span class="modal-info__token_bold">Есть</span>
+              <span class="modal-info__token">Защитный фильтр</span>
+            </li>
+            <li class="modal-info__item">
+              <span class="modal-info__token_bold">11000 ч</span>
+              <span class="modal-info__token">Срок службы ламп</span>
+            </li>
+          </ul>
+          <ul class="modal-info__ul modal-info__ul_right">
+            <li class="modal-info__item">
+              <span class="modal-info__token_bold">до 60 м<sup>2</sup></span>
+              <span class="modal-info__token">Площадь обеззараживания</span>
+            </li>
+            <li class="modal-info__item">
+              <span class="modal-info__token_bold">40 м<sup>3</sup>/ч</span>
+              <span class="modal-info__token">Производительность</span>
+            </li>
+            <li class="modal-info__item">
+              <span class="modal-info__token_bold">15 Вт</span>
+              <span class="modal-info__token">Мощность УФ-ламп</span>
+            </li>
+            <li class="modal-info__item">
+              <span class="modal-info__token_bold">550 мм</span>
+              <span class="modal-info__token">Длина</span>
+            </li>
+            <li class="modal-info__item">
+              <span class="modal-info__token_bold">100 мм</span>
+              <span class="modal-info__token">Ширина</span>
+            </li>
+            <li class="modal-info__item">
+              <span class="modal-info__token_bold">100 мм</span>
+              <span class="modal-info__token">Высота</span>
+            </li>
+            <li class="modal-info__item">
+              <span class="modal-info__token_bold">2,0 кг</span>
+              <span class="modal-info__token">Вес</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
