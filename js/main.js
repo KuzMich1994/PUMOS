@@ -6,22 +6,22 @@ menuButton.addEventListener('click', function() {
 })
 
 let modalButton = $('[data-toggle="order"]');
-let modalButtonInfo = $('[data-toggle="info"]');
+// let modalButtonInfo = $('[data-toggle="info"]');
 let sertificateButton = $('[data-toggle="sertificate"]');
 let appendixButton = $('[data-toggle="appendix"]');
 let sliderButtonFirst = $('[data-toggle="first"]');
 let sliderButtonSecond = $('[data-toggle="second"]');
 let sliderButtonThrid = $('[data-toggle="thrid"]');
 let modalButtonClose = $('.modal__button-close');
-let modalButtonCloseInfo = $('.modal-info__button-close');
+// let modalButtonCloseInfo = $('.modal-info__button-close');
 let modalClose = $('.modal__overlay');
 let modalPhotoClose = $('.modal-photo__image');
 let sliderModalClose = $('.slider-modal__image')
 modalButton.on('click', openModal);
 modalButtonClose.on('click', closeModal);
 modalClose.on('click', closeModal);
-modalButtonInfo.on('click', openModalInfo);
-modalButtonCloseInfo.on('click', closeModalInfo);
+// modalButtonInfo.on('click', openModalInfo);
+// modalButtonCloseInfo.on('click', closeModalInfo);
 sertificateButton.on('click', openModalPhotoSertificate);
 appendixButton.on('click', openModalPhotoAppendix);
 modalPhotoClose.on('click', closeModal);
@@ -35,22 +35,22 @@ sliderModalClose.on('click', closeModalThrid);
 function openModal() {
   let modalOverlay = $('.modal__overlay')
   let modalDialog = $('.modal__dialog')
-  let modalInfoOverlay = $('.modal-info__overlay')
-  let modalInfoDialog = $('.modal-info__dialog')
+  // let modalInfoOverlay = $('.modal-info__overlay')
+  // let modalInfoDialog = $('.modal-info__dialog')
   modalOverlay.addClass('modal__overlay_visible')
   modalDialog.addClass('modal__dialog_visible')
-  modalInfoOverlay.removeClass('modal-info__overlay_visible')
-  modalInfoDialog.removeClass('modal-info__dialog_visible')
+  // modalInfoOverlay.removeClass('modal-info__overlay_visible')
+  // modalInfoDialog.removeClass('modal-info__dialog_visible')
   $('body').addClass('scroll-hidden')
 }
 
-function openModalInfo() {
-  let modalInfoOverlay = $('.modal-info__overlay')
-  let modalInfoDialog = $('.modal-info__dialog')
-  modalInfoOverlay.addClass('modal-info__overlay_visible')
-  modalInfoDialog.addClass('modal-info__dialog_visible')
-  $('body').addClass('scroll-hidden')
-}
+// function openModalInfo() {
+//   let modalInfoOverlay = $('.modal-info__overlay')
+//   let modalInfoDialog = $('.modal-info__dialog')
+//   modalInfoOverlay.addClass('modal-info__overlay_visible')
+//   modalInfoDialog.addClass('modal-info__dialog_visible')
+//   $('body').addClass('scroll-hidden')
+// }
 
 function openModalPhotoSertificate() {
   let modalPhotoOverlay = $('.modal-photo__overlay')
@@ -98,13 +98,13 @@ function closeModal() {
   modalPhotoAppendixDialog.removeClass('modal-photo__app-dialog_visible')
   $('body').removeClass('scroll-hidden')
 }
-function closeModalInfo() {
-  let modalInfoOverlay = $('.modal-info__overlay')
-  let modalInfoDialog = $('.modal-info__dialog')
-  modalInfoOverlay.removeClass('modal-info__overlay_visible')
-  modalInfoDialog.removeClass('modal-info__dialog_visible')
-  $('body').removeClass('scroll-hidden')
-}
+// function closeModalInfo() {
+//   let modalInfoOverlay = $('.modal-info__overlay')
+//   let modalInfoDialog = $('.modal-info__dialog')
+//   modalInfoOverlay.removeClass('modal-info__overlay_visible')
+//   modalInfoDialog.removeClass('modal-info__dialog_visible')
+//   $('body').removeClass('scroll-hidden')
+// }
 
 function closeModalFirst() {
   let sliderModalOverlay = $('.slider-modal__overlay')
@@ -130,11 +130,11 @@ $(document).click(function(e) {
     closeModal();
   }
 })
-$(document).click(function(e) {
-  if($(e.target).is('.modal-info__overlay')) {
-    closeModalInfo();
-  }
-})
+// $(document).click(function(e) {
+//   if($(e.target).is('.modal-info__overlay')) {
+//     closeModalInfo();
+//   }
+// })
 
 $(document).click(function(e) {
   if($(e.target).is('.modal-photo__overlay')) {
@@ -197,40 +197,40 @@ $(document).click(function(e) {
 
 })
 
-let pricetag = document.querySelector('.product__pay-pricetag');
-let counter = document.querySelector('.counter');
-let stand = document.querySelector('.stand');
-pricetag.textContent = '6 300'
+// let pricetag = document.querySelector('.product__pay-pricetag');
+// let counter = document.querySelector('.counter');
+// let stand = document.querySelector('.stand');
+// // pricetag.textContent = '9 900'
 
-counter.addEventListener('click', (event) => {
-    if (event.currentTarget.checked) {
-        if (stand.checked) {
-            pricetag.textContent = '9 600'
-        } else {
-            pricetag.textContent = '7 800'
-        }
-    } else {
-        if (stand.checked) {
-            pricetag.textContent = '8 100'
-        } else {
-            pricetag.textContent = '6 300'
-        }
-    }
-})
+// counter.addEventListener('click', (event) => {
+//     if (event.currentTarget.checked) {
+//         if (stand.checked) {
+//             pricetag.textContent = '13 200'
+//         } else {
+//             pricetag.textContent = '11 400'
+//         }
+//     } else {
+//         if (stand.checked) {
+//             pricetag.textContent = '11 700'
+//         } else {
+//             pricetag.textContent = '9 900'
+//         }
+//     }
+// })
 
-stand.addEventListener('click', (event) => {
-    if (event.currentTarget.checked) {
-        if (counter.checked) {
-            pricetag.textContent = '9 600'
-        } else {
-            pricetag.textContent = '8 100'
-        }
-    } else {
-        if (counter.checked) {
-            pricetag.textContent = '7 800'
-        } else {
-            pricetag.textContent = '6 300'
-        }
-    }
-})
+// stand.addEventListener('click', (event) => {
+//     if (event.currentTarget.checked) {
+//         if (counter.checked) {
+//             pricetag.textContent = '13 200'
+//         } else {
+//             pricetag.textContent = '11 700'
+//         }
+//     } else {
+//         if (counter.checked) {
+//             pricetag.textContent = '11 400'
+//         } else {
+//             pricetag.textContent = '9 900'
+//         }
+//     }
+// })
 })

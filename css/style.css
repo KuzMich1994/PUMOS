@@ -406,6 +406,10 @@ a {
   outline: none;
 }
 
+.button-primary:hover {
+  background-color: #FFA438;
+}
+
 .button-secondary {
   font-family: Montserrat;
   font-style: normal;
@@ -419,6 +423,11 @@ a {
   border-radius: 10px;
   cursor: pointer;
   outline: none;
+}
+
+.button-secondary:hover {
+  background-color: #005686;
+  color: #ffffff;
 }
 
 .rouble {
@@ -784,6 +793,10 @@ input[type="checkbox"]:checked:before {
   color: #282A4D;
 }
 
+.navbar__item-mobile {
+  display: none;
+}
+
 .navbar__link {
   text-decoration: none;
 }
@@ -880,7 +893,7 @@ input[type="checkbox"]:checked:before {
 
 .main-display__photo {
   position: absolute;
-  top: 120px;
+  top: 100px;
   right: -38px;
   bottom: 0;
   width: 659px;
@@ -1236,6 +1249,14 @@ input[type="checkbox"]:checked:before {
   color: #282A4C;
 }
 
+.product__pay-pricetag_1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 40px;
+  color: #282A4C;
+}
+
 .product__pay-rouble {
   margin-left: -40px;
   font-family: 'ALSRubl', sans-serif;
@@ -1244,6 +1265,10 @@ input[type="checkbox"]:checked:before {
   font-size: 30px;
   line-height: 40px;
   color: #282A4C;
+}
+
+.product__pay-rouble_second {
+  margin-left: -30px;
 }
 
 .product__pay-button {
@@ -1394,8 +1419,16 @@ input[type="checkbox"]:checked:before {
   background-color: #BF0016;
 }
 
+.product__download-button_red:hover {
+  background-color: #DE273C;
+}
+
 .product__download-button_blue {
   background-color: #005686;
+}
+
+.product__download-button_blue:hover {
+  background-color: #1576AC;
 }
 
 .documents {
@@ -1562,6 +1595,7 @@ input[type="checkbox"]:checked:before {
 
 .catalog__button {
   padding: 10px 14px;
+  text-decoration: none;
 }
 
 .catalog__button_primary {
@@ -2277,6 +2311,9 @@ input[type="checkbox"]:checked:before {
   }
   .navbar__item {
     margin-bottom: 30px;
+  }
+  .navbar__item-mobile {
+    display: block;
   }
   .navbar__social {
     margin: 0;
