@@ -250,3 +250,57 @@ input[type="checkbox"]:checked:before
   &__image
     width: 580px
     cursor: zoom-out
+.slider-modal
+  &__overlay
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background: rgba(66, 83, 84, 0.5)
+    z-index: 100
+    transition: .5s
+    opacity: 0
+    visibility: hidden
+    &_visible
+      visibility: visible
+      opacity: 1
+      transition: all .5s ease
+  &__photo
+    &-dialog
+      &-first
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 999
+        opacity: 0
+        visibility: hidden
+        &_visible
+          visibility: visible
+          opacity: 1
+      &-second
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 999
+        opacity: 0
+        visibility: hidden
+        &_visible
+          visibility: visible
+          opacity: 1
+      &-thrid
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 999
+        opacity: 0
+        visibility: hidden
+        &_visible
+          visibility: visible
+          opacity: 1
+  &__image
+    width: 580px
+    cursor: pointer

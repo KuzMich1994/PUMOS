@@ -18,9 +18,9 @@
           <div class="navbar__links-wrapper navbar__links-wrapper-mobile">
             <nav class="navbar__nav">
               <ul class="navbar__ul">
-                <li class="navbar__item"><a href="#" class="navbar__link">Каталог</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">О компании</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">Контакты</a></li>
+                <li class="navbar__item"><a href="#catalog" class="navbar__link">Каталог</a></li>
+                <li class="navbar__item"><a href="#info" class="navbar__link">О компании</a></li>
+                <li class="navbar__item"><a href="#contacts" class="navbar__link">Контакты</a></li>
               </ul>
             </nav>
             <div class="navbar__social">
@@ -54,15 +54,15 @@
           <img src="img/main-img-min.png" alt="фон" class="main-display__photo">
         <h1 class="main-display__title">Бактерицидные УФ-облучатели</h1>
         <p class="main-display__description">Оставьте заявку, и мы поможем вам подобрать рециркулятор подходящий для вашего помещения</p>
-        <form action="#" class="main-display__form">
-          <input type="text" class="main-display__form-name" placeholder="Имя">
-          <input type="tel" class="main-display__form-phone" placeholder="Телефон">
+        <form action="send.php" method="POST" class="main-display__form">
+          <input type="text" name="name" class="main-display__form-name" placeholder="Имя" required>
+          <input type="tel" name="phone" class="main-display__form-phone" placeholder="Телефон" required>
           <button class="button-primary main-display__form-button">Отправить</button>
         </form>
       </div>
     </div>
     </main>
-  <section class="catalog">
+  <section id="catalog" class="catalog">
     <div class="container">
       <h2 class="catalog__title">Каталог</h2>
       <div class="catalog__cards">
@@ -93,7 +93,7 @@
           </div>
           <div class="catalog__card-right">
             <div class="catalog__card-info">
-              <h3 class="catalog__card-title">Модель СЭС-01-1-UF-80-220-AC</h3>
+              <h3 class="catalog__card-title"><a href="/pumos/product-page.html" class="catalog__card-link">Модель СЭС-01-1-UF-80-220-AC</a></h3>
               <ul class="catalog__card-ul">
                 <li class="catalog__card-item"><span class="catalog__card-text">Производительность</span><span class="catalog__card-text catalog__card-text_bold">80 м³/ч</span></li>
                 <li class="catalog__card-item"><span class="catalog__card-text">Габариты (Д*В*Ш)</span><span class="catalog__card-text catalog__card-text_bold">550*100*100 мм</span></li>
@@ -114,7 +114,7 @@
           </div>
           <div class="catalog__card-right">
             <div class="catalog__card-info">
-              <h3 class="catalog__card-title">Модель СЭС-01-1-UF-160-220-AC</h3>
+              <h3 class="catalog__card-title"><a href="/pumos/product-page.html" class="catalog__card-link">Модель СЭС-01-1-UF-160-220-AC</a></h3>
               <ul class="catalog__card-ul">
                 <li class="catalog__card-item"><span class="catalog__card-text">Производительность</span><span class="catalog__card-text catalog__card-text_bold">160 м³/ч</span></li>
                 <li class="catalog__card-item"><span class="catalog__card-text">Габариты (Д*В*Ш)</span><span class="catalog__card-text catalog__card-text_bold">320*305*95 мм</span></li>
@@ -135,7 +135,7 @@
           </div>
           <div class="catalog__card-right">
             <div class="catalog__card-info">
-              <h3 class="catalog__card-title">Модель СЭС-01-1-UF-160-220-AC</h3>
+              <h3 class="catalog__card-title"><a href="/pumos/product-page.html" class="catalog__card-link">Модель СЭС-01-1-UF-160-220-AC</a></h3>
               <ul class="catalog__card-ul">
                 <li class="catalog__card-item"><span class="catalog__card-text">Производительность</span><span class="catalog__card-text catalog__card-text_bold">160 м³/ч</span></li>
                 <li class="catalog__card-item"><span class="catalog__card-text">Габариты (Д*В*Ш)</span><span class="catalog__card-text catalog__card-text_bold">320*305*95 мм</span></li>
@@ -156,7 +156,7 @@
           </div>
           <div class="catalog__card-right">
             <div class="catalog__card-info">
-              <h3 class="catalog__card-title">Модель СЭС-01-1-UF-160-220-AC</h3>
+              <h3 class="catalog__card-title"><a href="/pumos/product-page.html" class="catalog__card-link">Модель СЭС-01-1-UF-160-220-AC</a></h3>
               <ul class="catalog__card-ul">
                 <li class="catalog__card-item"><span class="catalog__card-text">Производительность</span><span class="catalog__card-text catalog__card-text_bold">160 м³/ч</span></li>
                 <li class="catalog__card-item"><span class="catalog__card-text">Габариты (Д*В*Ш)</span><span class="catalog__card-text catalog__card-text_bold">320*305*95 мм</span></li>
@@ -177,7 +177,7 @@
           </div>
           <div class="catalog__card-right">
             <div class="catalog__card-info">
-              <h3 class="catalog__card-title">Модель СЭС-01-1-UF-160-220-AC</h3>
+              <h3 class="catalog__card-title"><a href="/pumos/product-page.html" class="catalog__card-link">Модель СЭС-01-1-UF-160-220-AC</a></h3>
               <ul class="catalog__card-ul">
                 <li class="catalog__card-item"><span class="catalog__card-text">Производительность</span><span class="catalog__card-text catalog__card-text_bold">160 м³/ч</span></li>
                 <li class="catalog__card-item"><span class="catalog__card-text">Габариты (Д*В*Ш)</span><span class="catalog__card-text catalog__card-text_bold">320*305*95 мм</span></li>
@@ -200,10 +200,10 @@
     <img src="img/promo-bg.png" alt="фон" class="promo__bg">
     <div class="container-small">
       <h2 class="promo__title">Узнайте, какой рециркулятор подходит для вашего помещения</h2>
-      <form action="#" class="promo__form">
-        <input type="text" class="promo__form-name" placeholder="Имя">
-        <input type="tel" class="promo__form-phone" placeholder="Телефон">
-        <input type="email" class="promo__form-email" placeholder="E-mail">
+      <form action="send.php" method="POST" class="promo__form">
+        <input type="text" name="name" class="promo__form-name" placeholder="Имя" required>
+        <input type="tel" name="phone" class="promo__form-phone" placeholder="Телефон" required>
+        <input type="email" name="email" class="promo__form-email" placeholder="E-mail" required>
         <button class="button-primary promo__form-button">Отправить</button>
       </form>
     </div>
@@ -237,7 +237,7 @@
     </div>
   </section>
 
-  <section class="info">
+  <section id="info" class="info">
     <div class="container-info">
       <div class="info__wrapper">
         <img src="img/info-image-2.png" alt="фон" class="info__image">
@@ -255,16 +255,16 @@
     <div class="container-small">
       <h2 class="promo__title_small">Остались вопросы?
       Задавайте их нам!</h2>
-      <form action="#" class="promo__form">
-        <input type="text" class="promo__form-name" placeholder="Имя">
-        <input type="tel" class="promo__form-phone" placeholder="Телефон">
-        <input type="email" class="promo__form-email" placeholder="E-mail">
+      <form action="send.php" method="POST" class="promo__form">
+        <input type="text" name="name" class="promo__form-name" placeholder="Имя" required>
+        <input type="tel" name="phone" class="promo__form-phone" placeholder="Телефон" required>
+        <input type="email" name="email" class="promo__form-email" placeholder="E-mail" required>
         <button class="button-primary promo__form-button">Отправить</button>
       </form>
     </div>
   </section>
 
-  <footer class="footer">
+  <footer id="contacts" class="footer">
     <div class="container-footer">
       <div class="footer__top">
         <a href="/pumos" class="footer__logo">
@@ -303,10 +303,10 @@
         </button>
         <h2 class="modal__title">Оставьте заявку</h2>
         <p class="modal__text">Оставьте заявку, мы перезоним в течении двух минут</p>
-        <form id="modal" action="#" class="modal__form">
-          <input type="text" class="modal__input" placeholder="Имя">
-          <input type="tel" class="modal__input" placeholder="Телефон">
-          <input type="email" class="modal__input modal__input_email" placeholder="E-mail">
+        <form id="modal" action="send.php" method="POST" class="modal__form">
+          <input type="text" name="name" class="modal__input" placeholder="Имя" required>
+          <input type="tel" name="phone" class="modal__input" placeholder="Телефон" required>
+          <input type="email" name="email" class="modal__input modal__input_email" placeholder="E-mail" required>
   
           <label for="legal" class="modal__label">
             <input form="modal" id="legal" type="checkbox" hidden>

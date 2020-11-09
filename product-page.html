@@ -21,9 +21,9 @@
         <div class="navbar__links-wrapper navbar__links-wrapper-mobile">
           <nav class="navbar__nav">
             <ul class="navbar__ul">
-              <li class="navbar__item"><a href="#" class="navbar__link">Каталог</a></li>
-              <li class="navbar__item"><a href="#" class="navbar__link">О компании</a></li>
-              <li class="navbar__item"><a href="#" class="navbar__link">Контакты</a></li>
+              <li class="navbar__item"><a href="#catalog" class="navbar__link">Каталог</a></li>
+              <li class="navbar__item"><a href="../pumos/#info" class="navbar__link">О компании</a></li>
+              <li class="navbar__item"><a href="#contacts" class="navbar__link">Контакты</a></li>
             </ul>
           </nav>
           <div class="navbar__social">
@@ -70,9 +70,9 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide product-slider__slide"><img src="img/product-image.png" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
-                <div class="swiper-slide product-slider__slide"><img src="img/product-image-2.jpg" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
-                <div class="swiper-slide product-slider__slide"><img src="img/product-image-3.jpg" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
+                <div data-toggle="first" class="swiper-slide product-slider__slide"><img src="img/product-image.png" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
+                <div data-toggle="second" class="swiper-slide product-slider__slide"><img src="img/product-image-2.jpg" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
+                <div data-toggle="thrid" class="swiper-slide product-slider__slide"><img src="img/product-image-3.jpg" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
               </div>
               <!-- If we need pagination -->
               <div class="product-slider__pagination">
@@ -251,7 +251,7 @@
     </div>
   </section>
 
-  <section class="catalog">
+  <section id="catalog" class="catalog">
     <div class="container">
       <h2 class="catalog__title catalog__title_second">Другие товары</h2>
       <div class="catalog__cards">
@@ -287,7 +287,7 @@
           </div>
           <div class="catalog__card-right">
             <div class="catalog__card-info">
-              <h3 class="catalog__card-title">Модель СЭС-01-1-UF-80-220-AC</h3>
+              <h3 class="catalog__card-title"><a href="/pumos/product-page.html" class="catalog__card-link">Модель СЭС-01-1-UF-80-220-AC</a></h3>
               <ul class="catalog__card-ul">
                 <li class="catalog__card-item"><span class="catalog__card-text">Производительность</span><span
                     class="catalog__card-text catalog__card-text_bold">80 м³/ч</span></li>
@@ -313,7 +313,7 @@
           </div>
           <div class="catalog__card-right">
             <div class="catalog__card-info">
-              <h3 class="catalog__card-title">Модель СЭС-01-1-UF-160-220-AC</h3>
+              <h3 class="catalog__card-title"><a href="/pumos/product-page.html" class="catalog__card-link">Модель СЭС-01-1-UF-160-220-AC</a></h3>
               <ul class="catalog__card-ul">
                 <li class="catalog__card-item"><span class="catalog__card-text">Производительность</span><span
                     class="catalog__card-text catalog__card-text_bold">160 м³/ч</span></li>
@@ -339,7 +339,7 @@
           </div>
           <div class="catalog__card-right">
             <div class="catalog__card-info">
-              <h3 class="catalog__card-title">Модель СЭС-01-1-UF-160-220-AC</h3>
+              <h3 class="catalog__card-title"><a href="/pumos/product-page.html" class="catalog__card-link">Модель СЭС-01-1-UF-160-220-AC</a></h3>
               <ul class="catalog__card-ul">
                 <li class="catalog__card-item"><span class="catalog__card-text">Производительность</span><span
                     class="catalog__card-text catalog__card-text_bold">160 м³/ч</span></li>
@@ -365,7 +365,7 @@
           </div>
           <div class="catalog__card-right">
             <div class="catalog__card-info">
-              <h3 class="catalog__card-title">Модель СЭС-01-1-UF-160-220-AC</h3>
+              <h3 class="catalog__card-title"><a href="/pumos/product-page.html" class="catalog__card-link">Модель СЭС-01-1-UF-160-220-AC</a></h3>
               <ul class="catalog__card-ul">
                 <li class="catalog__card-item"><span class="catalog__card-text">Производительность</span><span
                     class="catalog__card-text catalog__card-text_bold">160 м³/ч</span></li>
@@ -391,7 +391,7 @@
           </div>
           <div class="catalog__card-right">
             <div class="catalog__card-info">
-              <h3 class="catalog__card-title">Модель СЭС-01-1-UF-160-220-AC</h3>
+              <h3 class="catalog__card-title"><a href="/pumos/product-page.html" class="catalog__card-link">Модель СЭС-01-1-UF-160-220-AC</a></h3>
               <ul class="catalog__card-ul">
                 <li class="catalog__card-item"><span class="catalog__card-text">Производительность</span><span
                     class="catalog__card-text catalog__card-text_bold">160 м³/ч</span></li>
@@ -414,7 +414,7 @@
     </div>
   </section>
   
-  <footer class="footer">
+  <footer id="contacts" class="footer">
     <div class="container-footer">
       <div class="footer__top">
         <a href="/pumos" class="footer__logo">
@@ -453,10 +453,10 @@
         </button>
         <h2 class="modal__title">Оставьте заявку</h2>
         <p class="modal__text">Оставьте заявку, мы перезоним в течении двух минут</p>
-        <form id="modal" action="#" class="modal__form">
-          <input type="text" class="modal__input" placeholder="Имя">
-          <input type="tel" class="modal__input" placeholder="Телефон">
-          <input type="email" class="modal__input modal__input_email" placeholder="E-mail">
+        <form id="modal" action="send.php" method="POST" class="modal__form">
+          <input type="text" name="name" class="modal__input" placeholder="Имя" required>
+          <input type="tel" name="phone" class="modal__input" placeholder="Телефон" required>
+          <input type="email" name="email" class="modal__input modal__input_email" placeholder="E-mail" required>
   
           <label for="legal" class="modal__label">
             <input form="modal" id="legal" type="checkbox" hidden>
@@ -563,6 +563,19 @@
     </div>
     <div class="modal-photo__app-dialog">
       <img src="img/appendix-big.png" alt="Приложение" class="modal-photo__image">
+    </div>
+  </div>
+
+  <div class="slider-modal">
+    <div class="slider-modal__overlay"></div>
+    <div class="slider-modal__photo-dialog-first">
+      <img src="img/product-image-2.jpg" alt="Фото" class="slider-modal__image">
+    </div>
+    <div class="slider-modal__photo-dialog-second">
+      <img src="img/product-image-3.jpg" alt="Фото" class="slider-modal__image">
+    </div>
+    <div class="slider-modal__photo-dialog-thrid">
+      <img src="img/product-image-4.jpg" alt="Фото" class="slider-modal__image">
     </div>
   </div>
 

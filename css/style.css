@@ -672,6 +672,75 @@ input[type="checkbox"]:checked:before {
   cursor: zoom-out;
 }
 
+.slider-modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(66, 83, 84, 0.5);
+  z-index: 100;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider-modal__overlay_visible {
+  visibility: visible;
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+.slider-modal__photo-dialog-first {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider-modal__photo-dialog-first_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.slider-modal__photo-dialog-second {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider-modal__photo-dialog-second_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.slider-modal__photo-dialog-thrid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider-modal__photo-dialog-thrid_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.slider-modal__image {
+  width: 580px;
+  cursor: pointer;
+}
+
 .navbar {
   position: relative;
   padding-top: 45px;
@@ -1034,6 +1103,7 @@ input[type="checkbox"]:checked:before {
   object-fit: cover;
   border-radius: 6px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .product__ul {
@@ -2367,6 +2437,9 @@ input[type="checkbox"]:checked:before {
     position: absolute;
     top: 785px;
   }
+  .modal-photo__image {
+    width: 381px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2473,6 +2546,9 @@ input[type="checkbox"]:checked:before {
   }
   .modal-info__middle {
     margin-bottom: 15px;
+  }
+  .slider-modal__image {
+    width: 480px;
   }
 }
 
@@ -2700,6 +2776,9 @@ input[type="checkbox"]:checked:before {
     width: 279px;
     height: 377px;
   }
+  .slider-modal__image {
+    width: 380px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -2765,6 +2844,12 @@ input[type="checkbox"]:checked:before {
   .product__download-title {
     font-size: 16px;
     text-align: center;
+  }
+  .modal-photo__image {
+    width: 300px;
+  }
+  .slider-modal__image {
+    width: 300px;
   }
 }
 

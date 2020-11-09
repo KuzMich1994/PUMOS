@@ -9,10 +9,14 @@ let modalButton = $('[data-toggle="order"]');
 let modalButtonInfo = $('[data-toggle="info"]');
 let sertificateButton = $('[data-toggle="sertificate"]');
 let appendixButton = $('[data-toggle="appendix"]');
+let sliderButtonFirst = $('[data-toggle="first"]');
+let sliderButtonSecond = $('[data-toggle="second"]');
+let sliderButtonThrid = $('[data-toggle="thrid"]');
 let modalButtonClose = $('.modal__button-close');
 let modalButtonCloseInfo = $('.modal-info__button-close');
 let modalClose = $('.modal__overlay');
 let modalPhotoClose = $('.modal-photo__image');
+let sliderModalClose = $('.slider-modal__image')
 modalButton.on('click', openModal);
 modalButtonClose.on('click', closeModal);
 modalClose.on('click', closeModal);
@@ -21,6 +25,12 @@ modalButtonCloseInfo.on('click', closeModalInfo);
 sertificateButton.on('click', openModalPhotoSertificate);
 appendixButton.on('click', openModalPhotoAppendix);
 modalPhotoClose.on('click', closeModal);
+sliderButtonFirst.on('click', openModalFirst);
+sliderButtonSecond.on('click', openModalSecond);
+sliderButtonThrid.on('click', openModalThrid);
+sliderModalClose.on('click', closeModalFirst);
+sliderModalClose.on('click', closeModalSecond);
+sliderModalClose.on('click', closeModalThrid);
 
 function openModal() {
   let modalOverlay = $('.modal__overlay')
@@ -56,6 +66,25 @@ function openModalPhotoAppendix() {
   modalPhotoAppendixDialog.addClass('modal-photo__app-dialog_visible')
 }
 
+function openModalFirst() {
+  let sliderModalOverlay = $('.slider-modal__overlay')
+  let sliderModalDialog = $('.slider-modal__photo-dialog-first')
+  sliderModalOverlay.addClass('slider-modal__overlay_visible')
+  sliderModalDialog.addClass('slider-modal__photo-dialog-first_visible')
+}
+function openModalSecond() {
+  let sliderModalOverlay = $('.slider-modal__overlay')
+  let sliderModalDialog = $('.slider-modal__photo-dialog-second')
+  sliderModalOverlay.addClass('slider-modal__overlay_visible')
+  sliderModalDialog.addClass('slider-modal__photo-dialog-second_visible')
+}
+function openModalThrid() {
+  let sliderModalOverlay = $('.slider-modal__overlay')
+  let sliderModalDialog = $('.slider-modal__photo-dialog-thrid')
+  sliderModalOverlay.addClass('slider-modal__overlay_visible')
+  sliderModalDialog.addClass('slider-modal__photo-dialog-thrid_visible')
+}
+
 function closeModal() {
   let modalOverlay = $('.modal__overlay')
   let modalDialog = $('.modal__dialog')
@@ -76,6 +105,26 @@ function closeModalInfo() {
   modalInfoDialog.removeClass('modal-info__dialog_visible')
   $('body').removeClass('scroll-hidden')
 }
+
+function closeModalFirst() {
+  let sliderModalOverlay = $('.slider-modal__overlay')
+  let sliderModalDialog = $('.slider-modal__photo-dialog-first')
+  sliderModalOverlay.removeClass('slider-modal__overlay_visible')
+  sliderModalDialog.removeClass('slider-modal__photo-dialog-first_visible')
+}
+function closeModalSecond() {
+  let sliderModalOverlay = $('.slider-modal__overlay')
+  let sliderModalDialog = $('.slider-modal__photo-dialog-second')
+  sliderModalOverlay.removeClass('slider-modal__overlay_visible')
+  sliderModalDialog.removeClass('slider-modal__photo-dialog-second_visible')
+}
+function closeModalThrid() {
+  let sliderModalOverlay = $('.slider-modal__overlay')
+  let sliderModalDialog = $('.slider-modal__photo-dialog-thrid')
+  sliderModalOverlay.removeClass('slider-modal__overlay_visible')
+  sliderModalDialog.removeClass('slider-modal__photo-dialog-thrid_visible')
+}
+
 $(document).click(function(e) {
   if($(e.target).is('.modal__overlay')) {
     closeModal();
@@ -90,6 +139,21 @@ $(document).click(function(e) {
 $(document).click(function(e) {
   if($(e.target).is('.modal-photo__overlay')) {
     closeModal();
+  }
+})
+$(document).click(function(e) {
+  if($(e.target).is('.slider-modal__overlay')) {
+    closeModalFirst();
+  }
+})
+$(document).click(function(e) {
+  if($(e.target).is('.slider-modal__overlay')) {
+    closeModalSecond();
+  }
+})
+$(document).click(function(e) {
+  if($(e.target).is('.slider-modal__overlay')) {
+    closeModalThrid();
   }
 })
 
