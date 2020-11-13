@@ -1,9 +1,14 @@
 $(document).ready(function() {
   let menuButton = document.querySelector('.mobile-button');
-menuButton.addEventListener('click', function() {
-  document.querySelector('.navbar__links-wrapper-mobile').classList.toggle('navbar__links-wrapper-mobile_visible')
-  document.querySelector('body').classList.toggle('scroll-hidden')
-})
+
+  if (menuButton) {
+    menuButton.addEventListener('click', function() {
+      document.querySelector('.navbar__links-wrapper-mobile').classList.toggle('navbar__links-wrapper-mobile_visible')
+      document.querySelector('body').classList.toggle('scroll-hidden')
+    })
+  }
+
+
 
 let modalButton = $('[data-toggle="order"]');
 // let modalButtonInfo = $('[data-toggle="info"]');
@@ -161,41 +166,47 @@ $(document).click(function(e) {
   let hiddenButton = document.querySelector('.product__button_hidden');
   let productDescriptionWrapper = document.querySelector('.product__description-wrapper');
   let productCardMiddle = document.querySelector('.product__card-middle');
-  readButton.addEventListener('click', function() {
-    productDescriptionWrapper.classList.add('product__description-wrapper_full')
-    productCardMiddle.classList.add('product__card-middle_full')
-    readButton.classList.add('product__button_hidden')
-    hiddenButton.classList.remove('product__button_hidden')
-  })
-  hiddenButton.addEventListener('click', function() {
-    productDescriptionWrapper.classList.remove('product__description-wrapper_full')
-    productCardMiddle.classList.remove('product__card-middle_full')
-    readButton.classList.remove('product__button_hidden')
-    hiddenButton.classList.add('product__button_hidden')
-  })
+  if (readButton) {
+    readButton.addEventListener('click', function() {
+      productDescriptionWrapper.classList.add('product__description-wrapper_full')
+      productCardMiddle.classList.add('product__card-middle_full')
+      readButton.classList.add('product__button_hidden')
+      hiddenButton.classList.remove('product__button_hidden')
+    })
+  }
+  if (hiddenButton) {
+    hiddenButton.addEventListener('click', function() {
+      productDescriptionWrapper.classList.remove('product__description-wrapper_full')
+      productCardMiddle.classList.remove('product__card-middle_full')
+      readButton.classList.remove('product__button_hidden')
+      hiddenButton.classList.add('product__button_hidden')
+    })
+  }
 
-  var mySwiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  simulateTouch: false,
-
-  // If we need pagination
-  pagination: {
-    el: '.product-slider__pagination',
-    bulletClass: "product-slider__bullet",
-    bulletActiveClass: "product-slider__bullet_active",
-    clickable: true,
-    type: "custom"
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.product-slider__button-next',
-    prevEl: '.product-slider__button-prev',
-  },
-
-})
+  if (typeof Swiper !== "undefined") {
+    var mySwiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      simulateTouch: false,
+    
+      // If we need pagination
+      pagination: {
+        el: '.product-slider__pagination',
+        bulletClass: "product-slider__bullet",
+        bulletActiveClass: "product-slider__bullet_active",
+        clickable: true,
+        type: "custom"
+      },
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: '.product-slider__button-next',
+        prevEl: '.product-slider__button-prev',
+      },
+    
+    })
+  }
 
 // let pricetag = document.querySelector('.product__pay-pricetag');
 // let counter = document.querySelector('.counter');

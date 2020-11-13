@@ -5,9 +5,9 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$name = $_POST['name'];
+$email = isset($_POST['email']) ? $_POST['email'] : '';
+$phone = isset($_POST['phone']) ? $_POST['phone'] : '';
+$name = isset($_POST['name']) ? $_POST['name'] : '';
 
 // Формирование самого письма
 if (empty($email)) {$title = "Консультация";
@@ -24,6 +24,50 @@ $body = "
 <b>Телефон:</b><br><br>$phone
 ";
 }
+
+
+
+
+
+
+
+$c = true;
+$message = '';
+
+foreach ( $_POST as $key => $value ) {
+  if ( $value != "" ) {
+
+    if ($value === 'on') {
+      $value = 'Да';
+    }
+
+    if ($key === 'counter') {
+      $key = 'Добавить счетчик в комплект';
+    }
+
+    if ($key === 'stand') {
+      $key = 'Добавить стойку в комплект';
+    }
+
+    $message .= "
+    " . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
+      <td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
+      <td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
+    </tr>
+    ";
+  }
+}
+
+$message = "<table style='width: 100%;'>$message</table>";
+
+
+
+
+
+
+
+
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -60,4 +104,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-{header('location: index.html');
+header('location: index.html');
