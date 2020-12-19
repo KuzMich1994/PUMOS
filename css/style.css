@@ -1835,11 +1835,12 @@ input[type="checkbox"]:checked:before {
 }
 
 .footer__logo {
-  width: 269px;
-  height: 62px;
+  width: 184px;
+  height: 43px;
 }
 
 .footer__social-links {
+  margin-left: 20px;
   width: 194px;
   display: flex;
   align-items: center;
@@ -1856,7 +1857,7 @@ input[type="checkbox"]:checked:before {
   font-family: Montserrat Alternates;
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 23px;
   line-height: 39px;
   text-decoration: none;
   color: #0E193E;
@@ -1866,7 +1867,7 @@ input[type="checkbox"]:checked:before {
   font-family: Montserrat Alternates;
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 16px;
   line-height: 27px;
   text-decoration: none;
   color: #0E193E;
