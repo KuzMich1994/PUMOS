@@ -986,6 +986,13 @@ input[type="checkbox"]:checked:before {
   padding-bottom: 30px;
 }
 
+.product__main-photo {
+  margin-right: 100px;
+  width: 281px;
+  height: 281px;
+  cursor: pointer;
+}
+
 .product-slider {
   max-width: 282px;
   min-height: 261px;
@@ -1057,6 +1064,7 @@ input[type="checkbox"]:checked:before {
 }
 
 .product__card {
+  max-width: 704px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1190,7 +1198,7 @@ input[type="checkbox"]:checked:before {
   margin-bottom: 10px;
   position: relative;
   max-width: 578px;
-  height: 154px;
+  height: 145px;
   overflow: hidden;
 }
 
@@ -1200,6 +1208,7 @@ input[type="checkbox"]:checked:before {
 }
 
 .product__gradient {
+  display: none;
   position: absolute;
   width: 100%;
   height: 45px;

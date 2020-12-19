@@ -1,6 +1,12 @@
 .product
   padding-top: 16px
   padding-bottom: 30px
+  &__main
+    &-photo
+      margin-right: 100px
+      width: 281px
+      height: 281px
+      cursor: pointer
   &-slider
     max-width: 282px
     min-height: 261px
@@ -54,6 +60,7 @@
     justify-content: space-between
     align-items: flex-start
   &__card
+    max-width: 704px
     display: flex
     flex-direction: column
     justify-content: flex-start
@@ -156,12 +163,13 @@
       margin-bottom: 10px
       position: relative
       max-width: 578px
-      height: 154px
+      height: 145px
       overflow: hidden
       &_full
         height: 100%
         padding-bottom: 10px
   &__gradient
+    display: none
     position: absolute
     width: 100%
     height: 45px
