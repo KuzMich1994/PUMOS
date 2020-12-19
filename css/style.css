@@ -1172,6 +1172,19 @@ input[type="checkbox"]:checked:before {
   color: #282A4C;
 }
 
+.product__description-ul {
+  padding-left: 20px;
+}
+
+.product__description-item {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282A4C;
+}
+
 .product__description-wrapper {
   padding-bottom: 0;
   margin-bottom: 10px;

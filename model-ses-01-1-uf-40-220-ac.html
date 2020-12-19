@@ -3,31 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ПУМОС - Бактерицидные УФ-облучатели</title>
+  <title>ПУМОС - Модель СЭС-01-1-UF-40-220-AC</title>
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery-3.5.1.min.js" defer></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js" defer></script>
   <script src="js/custom.js" defer></script>
 </head>
 <body>
-  
-    <header class="navbar">
-      <div class="container">
-        <div class="navbar__wrapper">
-          <a href="/pumos" class="navbar__logo"><img src="img/header-logo.svg" alt="ПУМОС"></a>
-          <div class="navbar__links-wrapper navbar__links-wrapper-mobile">
-            <nav class="navbar__nav">
-              <ul class="navbar__ul">
-                <li class="navbar__item navbar__item-mobile"><a href="/" class="navbar__link">На главную</a></li>
-                <li class="navbar__item"><a href="#catalog" class="navbar__link">Каталог</a></li>
-                <li class="navbar__item"><a href="#info" class="navbar__link">О компании</a></li>
-                <li class="navbar__item"><a href="#contacts" class="navbar__link">Контакты</a></li>
-              </ul>
-            </nav>
-            <div class="navbar__social">
-              <a href="https://api.whatsapp.com/send?phone=89107471313" class="navbar__social-link">
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar__wrapper">
+        <a href="/pumos" class="navbar__logo"><img src="img/header-logo.svg" alt="ПУМОС"></a>
+        <div class="navbar__links-wrapper navbar__links-wrapper-mobile">
+          <nav class="navbar__nav">
+            <ul class="navbar__ul">
+              <li class="navbar__item navbar__item-mobile"><a href="/" class="navbar__link">На главную</a></li>
+              <li class="navbar__item"><a href="#catalog" class="navbar__link">Каталог</a></li>
+              <li class="navbar__item"><a href="../#info" class="navbar__link">О компании</a></li>
+              <li class="navbar__item"><a href="#contacts" class="navbar__link">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="navbar__social">
+            <a href="https://api.whatsapp.com/send?phone=89107471313" class="navbar__social-link">
               <img src="img/whatsapp.svg" alt="whatsapp" class="navbar__social-icon">
             </a>
             <a href="tg://resolve?domain=Rightech1313" class="navbar__social-link">
@@ -36,35 +39,231 @@
             <a href="viber://add?number=89107471313" class="navbar__social-link">
               <img src="img/wiber.svg" alt="wiber" class="navbar__social-icon">
             </a>
-            </div>
-            <a href="mailto:stop-covid-uf@pumos.ru" class="navbar__contacts-email navbar__contacts-email_mobile">stop-covid-uf@pumos.ru</a>
           </div>
-          <div class="navbar__contacts">
-            <a href="tel:88005001392" class="navbar__contacts-phone">8 (800) 500-13-92</a>
-            <a href="mailto:stop-covid-uf@pumos.ru" class="navbar__contacts-email">stop-covid-uf@pumos.ru</a>
-          </div>
-          <button class="mobile-button">
-            <span class="mobile-button__line"></span>
-            <span class="mobile-button__line"></span>
-          </button>
+          <a href="mailto:stop-covid-uf@pumos.ru"
+            class="navbar__contacts-email navbar__contacts-email_mobile">stop-covid-uf@pumos.ru</a>
         </div>
-      </div>
-    </header>
-    <main class="main-display">
-      <img src="img/main-bg.png" alt="фон" class="main-display__bg">
-      <div class="container">
-        <div class="main-display__content">
-          <img src="img/main-img-2.png" alt="фон" class="main-display__photo">
-        <h1 class="main-display__title">Бактерицидные УФ-облучатели</h1>
-        <p class="main-display__description">Оставьте заявку, и мы поможем вам подобрать рециркулятор подходящий для вашего помещения</p>
-        <form action="send.php" method="POST" class="main-display__form">
-          <input type="text" name="name" class="main-display__form-name" placeholder="Имя" required>
-          <input type="tel" name="phone" class="main-display__form-phone" placeholder="Телефон" required>
-          <button class="button-primary main-display__form-button">Отправить</button>
-        </form>
+        <div class="navbar__contacts">
+          <a href="tel:88005001392" class="navbar__contacts-phone">8 (800) 500-13-92</a>
+          <a href="mailto:stop-covid-uf@pumos.ru" class="navbar__contacts-email">stop-covid-uf@pumos.ru</a>
+        </div>
+        <button class="mobile-button">
+          <span class="mobile-button__line"></span>
+          <span class="mobile-button__line"></span>
+        </button>
       </div>
     </div>
-    </main>
+  </header>
+  <nav class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+        <li class="breadcrumbs__item">СЭС-01-1-UF-40-220-AC</li>
+      </ul>
+    </div>
+  </nav>
+  <main class="product">
+    <div class="container">
+      <div class="product__wrapper">
+        <div class="product__card">
+          <h1 class="product__title">Рециркулятор напольно-настенный СЭС-01-1-UF-40-220-AC</h1>
+          <div class="product__card-top">
+            <!-- Slider main container -->
+            <div class="swiper-container product-slider">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div data-toggle="first" class="swiper-slide product-slider__slide"><img src="img/40/rectangle/40-1.png" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
+                <div data-toggle="second" class="swiper-slide product-slider__slide"><img src="img/40/rectangle/40-2.png" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
+                <div data-toggle="thrid" class="swiper-slide product-slider__slide"><img src="img/40/rectangle/40-3.png" alt="Модель СЭС-01-1-UF-40-220-AC" class="product__image"></div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="product-slider__pagination">
+                <span class="product-slider__bullet"><img src="img/40/square/40-min-1.png" alt="Кнопка" class="product-slider__bullet-image"></span>
+                <span class="product-slider__bullet"><img src="img/40/square/40-min-2.png" alt="Кнопка" class="product-slider__bullet-image"></span>
+                <span class="product-slider__bullet"><img src="img/40/square/40-min-3.png" alt="Кнопка" class="product-slider__bullet-image"></span>
+              </div>
+            
+              <!-- If we need navigation buttons -->
+              <button class="product-slider__button product-slider__button-prev"></button>
+              <button class="product-slider__button product-slider__button-next"></button>
+            
+            </div>
+            <ul class="product__ul product__ul_568">
+              <li class="product__item">
+                <span class="product__item-text_bold">Закрытый</span>
+                <span class="product__item-text">Корпус</span>
+              </li>
+              <li class="product__item">
+                <span class="product__item-text_bold">Cталь</span>
+                <span class="product__item-text">Материал</span>
+              </li>
+              <li class="product__item">
+                <span class="product__item-text_bold">220 В</span>
+                <span class="product__item-text">Питание</span>
+              </li>
+              <!-- <li class="product__item">
+                <span class="product__item-text_bold">1 шт</span>
+                <span class="product__item-text">Кол-ва ламп</span>
+              </li>
+              <li class="product__item">
+                <span class="product__item-text_bold">2 шт</span>
+                <span class="product__item-text">Вентиляторы</span>
+              </li> -->
+              <li class="product__item">
+                <span class="product__item-text_bold">Есть</span>
+                <span class="product__item-text">Защитный фильтр</span>
+              </li>
+              <li class="product__item">
+                <span class="product__item-text_bold">11000 ч</span>
+                <span class="product__item-text">Срок службы ламп</span>
+              </li>
+            </ul>
+          </div>
+          <div class="product__card-middle">
+            <h2 class="product__title_small">Описание</h2>
+            <div class="product__description-wrapper">
+              <p class="product__description">Компактный рециркулятор воздуха для антибактериальной обработки небольших помещений в присутствии людей.</p>
+              <p class="product__description">Предназначен для антибактериальной обработки жилых и нежилых помещений 3 категории в дошкольных, школьных, офисных,
+              клинических, производственных организациях.</p>
+              <p class="product__description">Небольшие габариты и спокойный дизайн позволяют вписать прибор практически в любой интерьер.</p>
+              <ul class="product__description-ul">
+                <li class="product__description-item">Эффективен в борьбе с распространением заболеваний, передающихся воздушно-капельным путем</li>
+                <li class="product__description-item">Используется бесстартерная технология, считается наиболее совершенной и надежной.</li>
+                <li class="product__description-item">Современный дизайн, плоская тыльная сторона для удобства крепления к стене.</li>
+                <li class="product__description-item">Компактная по сравнению со старшей модификацией модель, которая идеально впишется в оформление небольшого кабинета,
+                класса, коридора.</li>
+                <li class="product__description-item">Наличие электронной системы учёта времени работы рециркулятора опционально.</li>
+                <li class="product__description-item">Разрешается обработка помещений в присутствии людей - закрытая конструкция, режим рециркуляции, защита окружения от
+                воздействия ультрафиолетовых лучей.</li>
+              </ul>
+              <div class="product__gradient"></div>
+            </div>
+            <button class="product__button">Читать далее</button>
+            <button class="product__button product__button_hidden">Свернуть</button>
+          </div>
+          <div class="product__card-bottom">
+            <h2 class="product__title_small">Характеристики</h2>
+            <ul class="product__ul product__ul_left">
+              <!-- <li class="product__item">
+                <span class="product__item-text_bold">до 60 м<sup>2</sup></span>
+                <span class="product__item-text">Площадь обеззараживания</span>
+              </li> -->
+              <li class="product__item">
+                <span class="product__item-text_bold">40 м<sup>3</sup>/ч</span>
+                <span class="product__item-text">Производительность</span>
+              </li>
+              <!-- <li class="product__item">
+                <span class="product__item-text_bold">15 Вт</span>
+                <span class="product__item-text">Мощность УФ-ламп</span>
+              </li> -->
+              <li class="product__item">
+                <span class="product__item-text_bold">550 мм</span>
+                <span class="product__item-text">Длина</span>
+              </li>
+              <li class="product__item">
+                <span class="product__item-text_bold">100 мм</span>
+                <span class="product__item-text">Ширина</span>
+              </li>
+              <li class="product__item">
+                <span class="product__item-text_bold">100 мм</span>
+                <span class="product__item-text">Высота</span>
+              </li>
+              <li class="product__item">
+                <span class="product__item-text_bold">2,0 кг</span>
+                <span class="product__item-text">Вес</span>
+              </li>
+            </ul>
+            <ul class="product__ul">
+              <li class="product__item">
+                <span class="product__item-text_bold">Закрытый</span>
+                <span class="product__item-text">Корпус</span>
+              </li>
+              <li class="product__item">
+                <span class="product__item-text_bold">Cталь</span>
+                <span class="product__item-text">Материал</span>
+              </li>
+              <li class="product__item">
+                <span class="product__item-text_bold">220 В</span>
+                <span class="product__item-text">Питание</span>
+              </li>
+              <!-- <li class="product__item">
+                <span class="product__item-text_bold">1 шт</span>
+                <span class="product__item-text">Кол-ва ламп</span>
+              </li> -->
+              <!-- <li class="product__item">
+                <span class="product__item-text_bold">2 шт</span>
+                <span class="product__item-text">Вентиляторы</span>
+              </li> -->
+              <li class="product__item">
+                <span class="product__item-text_bold">Есть</span>
+                <span class="product__item-text">Защитный фильтр</span>
+              </li>
+              <li class="product__item">
+                <span class="product__item-text_bold">11000 ч</span>
+                <span class="product__item-text">Срок службы ламп</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="product__left">
+          <div class="product__pay">
+            <div class="product__pay-card">
+              <div class="product__pay-top">
+                <!-- <span class="product__pay-pricetag">9 900 </span> -->
+                <!-- <span class="product__pay-rouble">c</span> -->
+                <button data-toggle="order" class="button-primary product__pay-button" data-product="Рециркулятор напольно-настенный СЭС-01-1-UF-40-220-AC">Заказать</button>
+                <label for="counter" class="product__pay-label">
+                  <input form="modal" type="checkbox" name="counter" id="counter" class="counter" value="1500">
+                  <span class="product__pay-label-text">Добавить счетчик в комплект</span>
+                  <span class="product__pay-label-info" title="'Информационный текст'"></span>
+                </label>
+                <label for="stand" class="product__pay-label">
+                  <input form="modal" name="stand" type="checkbox" id="stand" class="stand" value="1800">
+                  <span class="product__pay-label-text">Добавить стойку в комплект</span>
+                  <span class="product__pay-label-info" title="'Информационный текст'"></span>
+                </label>
+              </div>
+              <div class="product__pay-bottom">
+                <div class="product__pay-way">
+                  <img src="img/prodict-pay-icon-2.svg" alt="Доставка" class="product__pay-way-icon">
+                  <span class="product__pay-way-info">Доставка курьером сегодня</span>  
+                </div>
+                <div class="product__pay-way">
+                  <img src="img/prodict-pay-icon-1.svg" alt="Самовывоз" class="product__pay-way-icon">
+                  <span class="product__pay-way-info"><span class="product__pay-way-info_stroke">Самовывоз</span> (с 10:00 до 18:00)</span>
+                </div>
+                <div class="product__pay-payment">
+                  <span class="product__pay-payment-text">Мы принимаем к оплате</span>
+                  <img src="img/mastercard.svg" alt="MasterCard" class="product__pay-payment-icon product__pay-payment-icon_small">
+                  <img src="img/masterto.svg" alt="Masterto" class="product__pay-payment-icon product__pay-payment-icon_small">
+                  <img src="img/visa.svg" alt="VISA" class="product__pay-payment-icon product__pay-payment-icon_large">
+                  <img src="img/world.svg" alt="МИР" class="product__pay-payment-icon product__pay-payment-icon_large">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__download">
+            <h2 class="product__download-title">Скачать журнал учета времени работы рециркулятора</h2>
+              <div class="product__download-buttons">
+                <a href="https://drive.google.com/file/d/1QmUi1E9mlS9z2FoxGkk3dNaVaBPqLtdD/view" class="product__download-button product__download-button_red">Скачать PDF</a>
+                <a href="https://drive.google.com/file/d/1RfuidbzoaZhHu9wofr0MHz3DXCow_8_u/view" class="product__download-button product__download-button_blue">Скачать DOC</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="documents">
+    <img src="img/documents-bg.png" alt="Фон" class="documents__bg">
+    <div class="container">
+      <h2 class="documents__title">Документы</h2>
+      <img data-toggle="sertificate" src="img/sertificate.png" alt="Сертификат" class="documents__image">
+      <img data-toggle="appendix" src="img/appendix.png" alt="Приложение" class="documents__image">
+    </div>
+  </section>
+
   <section id="catalog" class="catalog">
     <div class="container">
       <h2 class="catalog__title">Каталог</h2>
@@ -324,75 +523,7 @@
       </div>
     </div>
   </section>
-
-  <section class="promo">
-    <img src="img/promo-bg.png" alt="фон" class="promo__bg">
-    <div class="container-small">
-      <h2 class="promo__title">Узнайте, какой рециркулятор подходит для вашего помещения</h2>
-      <form action="send.php" method="POST" class="promo__form">
-        <input type="text" name="name" class="promo__form-name" placeholder="Имя" required>
-        <input type="tel" name="phone" class="promo__form-phone" placeholder="Телефон" required>
-        <input type="email" name="email" class="promo__form-email" placeholder="E-mail" required>
-        <button class="button-primary promo__form-button">Отправить</button>
-      </form>
-    </div>
-  </section>
-
-  <section class="features">
-    <div class="container-small">
-      <h2 class="features__title">Наши преимущества</h2>
-      <div class="features__wrapper">
-        <div class="features__card">
-          <img src="img/produce.svg" alt="Передовая продукция" class="features__card-icon">
-          <h3 class="features__card-title">Передовая продукция</h3>
-          <p class="features__card-description">Мы производим облучатели<br>рециркуляторы с возможностью удалённого управления.</p>
-        </div>
-        <div class="features__card">
-          <img src="img/individual.svg" alt="Индивидуальный подход" class="features__card-icon">
-          <h3 class="features__card-title">Индивидуальный подход</h3>
-          <p class="features__card-description">Создаём индивидуальные решения с учётом ваших пожеланий.</p>
-        </div>
-        <div class="features__card">
-          <img src="img/guarantee.svg" alt="Гарантия" class="features__card-icon">
-          <h3 class="features__card-title">Гарантия</h3>
-          <p class="features__card-description">Используем высококачественные материалы и компоненты. Вся продуктция сертифицирована.</p>
-        </div>
-        <div class="features__card">
-          <img src="img/control.svg" alt="Контроль и анализ" class="features__card-icon">
-          <h3 class="features__card-title">Удобство использования</h3>
-          <p class="features__card-description">Мы выпускаем рециркуляторы с регуляторами мощности и счётчиками наработки ламп.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="info" class="info">
-    <div class="container-info">
-      <div class="info__wrapper">
-        <img src="img/Frame_81-1.png" alt="фон" class="info__image">
-        <div class="info__text">
-          <h2 class="info__title">О компании</h2>
-          <p class="info__description">Более 20 лет мы работаем в сфере разработки и производства передовых инновационных энергосберегающих светодиодных систем
-          освещения, иллюминации и подсветки (на основе LED).</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="promo">
-    <img src="img/promo-bg.png" alt="фон" class="promo__bg">
-    <div class="container-small">
-      <h2 class="promo__title_small">Остались вопросы?
-      Задавайте их нам!</h2>
-      <form action="send.php" method="POST" class="promo__form">
-        <input type="text" name="name" class="promo__form-name" placeholder="Имя" required>
-        <input type="tel" name="phone" class="promo__form-phone" placeholder="Телефон" required>
-        <input type="email" name="email" class="promo__form-email" placeholder="E-mail" required>
-        <button class="button-primary promo__form-button">Отправить</button>
-      </form>
-    </div>
-  </section>
-
+  
   <footer id="contacts" class="footer">
     <div class="container-footer">
       <div class="footer__top">
@@ -454,7 +585,8 @@
       <div class="modal-info__dialog">
         <button class="modal-info__button-close"></button>
         <div class="modal-info__top">
-          <img src="img/card-image-small.jpg" alt="Ультрафиолетовый облучатель рециркулятор воздуха СЭС-01-1-UF" class="modal-info__image">
+          <img src="img/card-image-small.jpg" alt="Ультрафиолетовый облучатель рециркулятор воздуха СЭС-01-1-UF"
+            class="modal-info__image">
           <div class="modal-info__top-right">
             <h2 class="modal-info__title">Ультрафиолетовый облучатель рециркулятор воздуха СЭС-01-1-UF</h2>
             <button data-toggle="order" class="button-primary modal-info__button">Заказать</button>
@@ -462,8 +594,10 @@
         </div>
         <div class="modal-info__middle">
           <h3 class="modal-info__title-secondary">Описание</h3>
-          <p class="modal-info__description">Компактный рециркулятор для обеззараживания воздуха в небольших помещениях и на транспорте.</p>
-          <p class="modal-info__description">Корпус выполнен из высококачественной стали и имеет возможность креления к различным поверхностям.</p>
+          <p class="modal-info__description">Компактный рециркулятор для обеззараживания воздуха в небольших помещениях и
+            на транспорте.</p>
+          <p class="modal-info__description">Корпус выполнен из высококачественной стали и имеет возможность креления к
+            различным поверхностям.</p>
         </div>
         <h3 class="modal-info__title-secondary">Характеристики</h3>
         <div class="modal-info__bottom">
@@ -471,7 +605,7 @@
             <li class="modal-info__item">
               <span class="modal-info__token_bold">Закрытый</span>
               <span class="modal-info__token">Корпус</span>
-          </li>
+            </li>
             <li class="modal-info__item">
               <span class="modal-info__token_bold">Cталь</span>
               <span class="modal-info__token">Материал</span>
@@ -528,9 +662,32 @@
             </li>
           </ul>
         </div>
-        </div>
+      </div>
     </div>
   </div>
-<!-- Верстальщик: Сергей Кузьмичев -->
+
+  <div class="modal-photo">
+    <div class="modal-photo__overlay"></div>
+    <div class="modal-photo__sertificate-dialog">
+      <img src="img/sertificate-big.png" alt="Сертификат" class="modal-photo__image">
+    </div>
+    <div class="modal-photo__app-dialog">
+      <img src="img/appendix-big.png" alt="Приложение" class="modal-photo__image">
+    </div>
+  </div>
+
+  <div class="slider-modal">
+    <div class="slider-modal__overlay"></div>
+    <div class="slider-modal__photo-dialog-first">
+      <img src="img/40/rectangle/40-1.png" alt="Фото" class="slider-modal__image">
+    </div>
+    <div class="slider-modal__photo-dialog-second">
+      <img src="img/40/rectangle/40-2.png" alt="Фото" class="slider-modal__image">
+    </div>
+    <div class="slider-modal__photo-dialog-thrid">
+      <img src="img/40/rectangle/40-3.png" alt="Фото" class="slider-modal__image">
+    </div>
+  </div>
+
 </body>
 </html>
