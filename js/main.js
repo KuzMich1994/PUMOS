@@ -244,4 +244,27 @@ $(document).click(function(e) {
 //         }
 //     }
 // })
+
+const scrollLinks = () => {
+  const navbarLinks = document.querySelectorAll('.navbar__link'),
+    mobileMenu = document.querySelector('.navbar__links-wrapper-mobile'),
+    body = document.querySelector('body');
+
+  navbarLinks.forEach(item => {
+    item.addEventListener('click', e => {
+      e.preventDefault();
+      const blockID = item.getAttribute('href').substr(1);
+      console.log(blockID);
+      document.getElementById(blockID).scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+      mobileMenu.classList.remove('navbar__links-wrapper-mobile_visible')
+      body.classList.remove('scroll-hidden')
+    });
+  });
+
+};
+
+scrollLinks();
 })
