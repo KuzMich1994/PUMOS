@@ -252,15 +252,30 @@ const scrollLinks = () => {
 
   navbarLinks.forEach(item => {
     item.addEventListener('click', e => {
-      e.preventDefault();
-      const blockID = item.getAttribute('href').substr(1);
-      console.log(blockID);
-      document.getElementById(blockID).scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-      mobileMenu.classList.remove('navbar__links-wrapper-mobile_visible')
-      body.classList.remove('scroll-hidden')
+      if (document.querySelector('#info') || document.querySelector('#home')) {
+        e.preventDefault();
+        const blockID = item.getAttribute('href').substr(1);
+        console.log(blockID);
+        document.getElementById(blockID).scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+        mobileMenu.classList.remove('navbar__links-wrapper-mobile_visible');
+        body.classList.remove('scroll-hidden');
+      } else {
+        const target = e.target;
+        if (target.matches('a[href="#catalog"]') || target.matches('a[href="#contacts"]') || target.matches('a[href="#home"]')) {
+          e.preventDefault();
+          const blockID = item.getAttribute('href').substr(1);
+          console.log(blockID);
+          document.getElementById(blockID).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+          mobileMenu.classList.remove('navbar__links-wrapper-mobile_visible');
+          body.classList.remove('scroll-hidden');
+        }
+      }
     });
   });
 
